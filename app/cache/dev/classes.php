@@ -10436,7 +10436,8 @@ class ControllerResolver extends BaseControllerResolver
             throw new \InvalidArgumentException(sprintf('Class "%s" does not exist.', $class));
         }
 
-        $controller = call_user_func($this->createInjector($class), $this->container);
+        $injector = $this->createInjector($class);
+        $controller = call_user_func($injector, $this->container);
 
         if ($controller instanceof ContainerAwareInterface) {
             $controller->setContainer($this->container);
@@ -10455,6 +10456,11 @@ class ControllerResolver extends BaseControllerResolver
             if (null === $metadata) {
                 $metadata = new ClassHierarchyMetadata();
                 $metadata->addClassMetadata(new ClassMetadata($class));
+            }
+
+                                                if (null !== $metadata->getOutsideClassMetadata()->id
+                    && 0 !== strpos($metadata->getOutsideClassMetadata()->id, '_jms_di_extra.unnamed.service')) {
+                return;
             }
 
             $this->prepareContainer($cache, $filename, $metadata, $class);

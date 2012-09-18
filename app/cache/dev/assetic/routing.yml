@@ -2,4 +2,4 @@ _assetic:
     resource: .
     type: assetic
 _app:
-    resource: /Users/sergio/Documents/Developpement/Freebeats/freebeatsunlimited/Symfony/app/config/routing_dev.yml
+    resource: /Users/sergio/Documents/Developpement/Freebeats/freebeatsunlimited/app/config/routing_dev.yml

@@ -135,17 +135,18 @@
         "source": {
             "type": "git",
             "url": "https://github.com/doctrine/common",
-            "reference": "605b1b8b5a7bc8daf9111fb35483e5708e30de35"
+            "reference": "24c761bf0f8337064b961a8fad85631a561d26c7"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/doctrine/common/zipball/605b1b8b5a7bc8daf9111fb35483e5708e30de35",
-            "reference": "605b1b8b5a7bc8daf9111fb35483e5708e30de35",
+            "url": "https://github.com/doctrine/common/zipball/24c761bf0f8337064b961a8fad85631a561d26c7",
+            "reference": "24c761bf0f8337064b961a8fad85631a561d26c7",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.2"
         },
+        "time": "2012-09-17 11:47:57",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -180,9 +181,9 @@
                 "email": "kontakt@beberlei.de"
             },
             {
-                "name": "Johannes M. Schmitt",
+                "name": "Johannes Schmitt",
                 "email": "schmittjoh@gmail.com",
-                "homepage": "https://github.com/schmittjoh",
+                "homepage": "http://jmsyst.com",
                 "role": "Developer of wrapped JMSSerializerBundle"
             }
         ],
@@ -203,18 +204,19 @@
         "source": {
             "type": "git",
             "url": "https://github.com/doctrine/dbal",
-            "reference": "239630b61f03f39d198441eced1bfffb7b0e61d1"
+            "reference": "c4fe3499781944f7f2b056fd164cfedc67cc0130"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/doctrine/dbal/zipball/239630b61f03f39d198441eced1bfffb7b0e61d1",
-            "reference": "239630b61f03f39d198441eced1bfffb7b0e61d1",
+            "url": "https://github.com/doctrine/dbal/zipball/c4fe3499781944f7f2b056fd164cfedc67cc0130",
+            "reference": "c4fe3499781944f7f2b056fd164cfedc67cc0130",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.2",
             "doctrine/common": "2.3.*"
         },
+        "time": "2012-09-17 11:50:07",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -265,21 +267,22 @@
         "source": {
             "type": "git",
             "url": "git://github.com/fabpot/Twig.git",
-            "reference": "68b8c4619c5bbe82bd345fe56070dec8c356610a"
+            "reference": "b4d1d62b82e83c6fd3d5a6cd46a186de64275bb4"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/fabpot/Twig/zipball/68b8c4619c5bbe82bd345fe56070dec8c356610a",
-            "reference": "68b8c4619c5bbe82bd345fe56070dec8c356610a",
+            "url": "https://github.com/fabpot/Twig/zipball/b4d1d62b82e83c6fd3d5a6cd46a186de64275bb4",
+            "reference": "b4d1d62b82e83c6fd3d5a6cd46a186de64275bb4",
             "shasum": ""
         },
         "require": {
             "php": ">=5.2.4"
         },
+        "time": "2012-09-18 09:38:15",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.9-dev"
+                "dev-master": "1.10-dev"
             }
         },
         "installation-source": "source",
@@ -314,12 +317,12 @@
         "source": {
             "type": "git",
             "url": "git://github.com/symfony/symfony.git",
-            "reference": "e7059b44c78ca8e1e892adb4d93b5a482f4eb9b3"
+            "reference": "5a4a73ef9461bab9c88335a0d7e3ece5850225ae"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/symfony/symfony/zipball/e7059b44c78ca8e1e892adb4d93b5a482f4eb9b3",
-            "reference": "e7059b44c78ca8e1e892adb4d93b5a482f4eb9b3",
+            "url": "https://github.com/symfony/symfony/zipball/5a4a73ef9461bab9c88335a0d7e3ece5850225ae",
+            "reference": "5a4a73ef9461bab9c88335a0d7e3ece5850225ae",
             "shasum": ""
         },
         "require": {
@@ -368,6 +371,7 @@
             "propel/propel1": "dev-master",
             "monolog/monolog": "dev-master"
         },
+        "time": "2012-09-18 16:44:48",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -407,17 +411,18 @@
         "source": {
             "type": "git",
             "url": "git://github.com/swiftmailer/swiftmailer.git",
-            "reference": "c97353b1ebffe25a224146f69d17efe24c093def"
+            "reference": "1e5482485f30a2431f9b8eb19a091eef4b57008c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/swiftmailer/swiftmailer/zipball/c97353b1ebffe25a224146f69d17efe24c093def",
-            "reference": "c97353b1ebffe25a224146f69d17efe24c093def",
+            "url": "https://github.com/swiftmailer/swiftmailer/zipball/1e5482485f30a2431f9b8eb19a091eef4b57008c",
+            "reference": "1e5482485f30a2431f9b8eb19a091eef4b57008c",
             "shasum": ""
         },
         "require": {
             "php": ">=5.2.4"
         },
+        "time": "2012-09-13 13:16:16",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -456,12 +461,12 @@
         "source": {
             "type": "git",
             "url": "git://github.com/doctrine/doctrine2.git",
-            "reference": "4d9f24b2eef3af3a3e76c773994c19bbb0706f88"
+            "reference": "c6101317cd71cbf320e96f4ce461f8a5a54bf56d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/doctrine/doctrine2/zipball/4d9f24b2eef3af3a3e76c773994c19bbb0706f88",
-            "reference": "4d9f24b2eef3af3a3e76c773994c19bbb0706f88",
+            "url": "https://github.com/doctrine/doctrine2/zipball/c6101317cd71cbf320e96f4ce461f8a5a54bf56d",
+            "reference": "c6101317cd71cbf320e96f4ce461f8a5a54bf56d",
             "shasum": ""
         },
         "require": {
@@ -473,6 +478,7 @@
         "suggest": {
             "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
         },
+        "time": "2012-09-17 12:09:09",
         "bin": [
             "bin/doctrine",
             "bin/doctrine.php"
@@ -526,12 +532,12 @@
         "source": {
             "type": "git",
             "url": "git://github.com/doctrine/DoctrineBundle.git",
-            "reference": "v1.0.0"
+            "reference": "d3c930599723c8343472a5791b0f5909a4111a73"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/doctrine/DoctrineBundle/zipball/v1.0.0",
-            "reference": "v1.0.0",
+            "url": "https://github.com/doctrine/DoctrineBundle/zipball/d3c930599723c8343472a5791b0f5909a4111a73",
+            "reference": "d3c930599723c8343472a5791b0f5909a4111a73",
             "shasum": ""
         },
         "require": {
@@ -548,6 +554,7 @@
         "suggest": {
             "doctrine/orm": "The Doctrine ORM integration is optional in the bundle."
         },
+        "time": "2012-09-10 15:12:44",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
@@ -604,6 +611,7 @@
         "require": {
             "twig/twig": "1.*"
         },
+        "time": "2012-09-04 14:51:18",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -640,12 +648,12 @@
         "source": {
             "type": "git",
             "url": "http://github.com/kriswallsmith/assetic.git",
-            "reference": "dfbb776288baf9319d1693195af2cb6e00729901"
+            "reference": "a6baab9b4c4361aca51bf90ee47c1586dff3cb0c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/kriswallsmith/assetic/zipball/dfbb776288baf9319d1693195af2cb6e00729901",
-            "reference": "dfbb776288baf9319d1693195af2cb6e00729901",
+            "url": "https://github.com/kriswallsmith/assetic/zipball/a6baab9b4c4361aca51bf90ee47c1586dff3cb0c",
+            "reference": "a6baab9b4c4361aca51bf90ee47c1586dff3cb0c",
             "shasum": ""
         },
         "require": {
@@ -656,14 +664,17 @@
             "twig/twig": ">=1.6.0,<2.0",
             "leafo/lessphp": "*",
             "leafo/scssphp": "*",
-            "ptachoire/cssembed": "*"
+            "ptachoire/cssembed": "*",
+            "leafo/scssphp-compass": "*"
         },
         "suggest": {
             "twig/twig": "Assetic provides the integration with the Twig templating engine",
             "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
             "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler",
-            "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris"
+            "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
+            "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin"
         },
+        "time": "2012-09-14 11:29:48",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -674,7 +685,10 @@
         "autoload": {
             "psr-0": {
                 "Assetic": "src/"
-            }
+            },
+            "files": [
+                "src/functions.php"
+            ]
         },
         "license": [
             "MIT"
@@ -702,12 +716,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/AsseticBundle",
-            "reference": "4e7e8a039fa19434f04558473adbb201118af942"
+            "reference": "64345e86761444c35679e1aed424e1ed2370f0de"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/symfony/AsseticBundle/zipball/4e7e8a039fa19434f04558473adbb201118af942",
-            "reference": "4e7e8a039fa19434f04558473adbb201118af942",
+            "url": "https://github.com/symfony/AsseticBundle/zipball/64345e86761444c35679e1aed424e1ed2370f0de",
+            "reference": "64345e86761444c35679e1aed424e1ed2370f0de",
             "shasum": ""
         },
         "require": {
@@ -727,6 +741,7 @@
         "suggest": {
             "symfony/twig-bundle": "2.1.*"
         },
+        "time": "2012-09-14 12:37:24",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
@@ -784,6 +799,7 @@
             "symfony/config": "2.1.*",
             "symfony/yaml": "2.1.*"
         },
+        "time": "2012-08-29 12:25:46",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
@@ -819,12 +835,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/Seldaek/monolog",
-            "reference": "e5bf7ba5d1df622b68d004b3c0277bc94286e1b7"
+            "reference": "09b3a80cfaf3e323e348a5e817afeee98d5e6b48"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/Seldaek/monolog/zipball/e5bf7ba5d1df622b68d004b3c0277bc94286e1b7",
-            "reference": "e5bf7ba5d1df622b68d004b3c0277bc94286e1b7",
+            "url": "https://github.com/Seldaek/monolog/zipball/09b3a80cfaf3e323e348a5e817afeee98d5e6b48",
+            "reference": "09b3a80cfaf3e323e348a5e817afeee98d5e6b48",
             "shasum": ""
         },
         "require": {
@@ -838,6 +854,7 @@
             "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
             "ext-mongo": "Allow sending log messages to a MongoDB server"
         },
+        "time": "2012-09-18 15:50:48",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -876,12 +893,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/MonologBundle",
-            "reference": "v2.1.0-RC2"
+            "reference": "e1acd0a0da661bdb0f5378a60226ae6e30ec55c6"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/symfony/MonologBundle/zipball/v2.1.0-RC2",
-            "reference": "v2.1.0-RC2",
+            "url": "https://github.com/symfony/MonologBundle/zipball/e1acd0a0da661bdb0f5378a60226ae6e30ec55c6",
+            "reference": "e1acd0a0da661bdb0f5378a60226ae6e30ec55c6",
             "shasum": ""
         },
         "require": {
@@ -895,6 +912,7 @@
             "symfony/yaml": "2.1.*",
             "symfony/config": "2.1.*"
         },
+        "time": "2012-09-18 15:52:00",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
@@ -925,23 +943,24 @@
     },
     {
         "name": "sensio/distribution-bundle",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
+        "version": "2.1.x-dev",
+        "version_normalized": "2.1.9999999.9999999-dev",
         "target-dir": "Sensio/Bundle/DistributionBundle",
         "source": {
             "type": "git",
             "url": "https://github.com/sensio/SensioDistributionBundle",
-            "reference": "98921298951598e8707258cba2b6180b96faa91c"
+            "reference": "2eee3cb4cd761c851f0d766649fb9ff6f4c97002"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/sensio/SensioDistributionBundle/zipball/98921298951598e8707258cba2b6180b96faa91c",
-            "reference": "98921298951598e8707258cba2b6180b96faa91c",
+            "url": "https://github.com/sensio/SensioDistributionBundle/zipball/2eee3cb4cd761c851f0d766649fb9ff6f4c97002",
+            "reference": "2eee3cb4cd761c851f0d766649fb9ff6f4c97002",
             "shasum": ""
         },
         "require": {
             "symfony/framework-bundle": "2.1.*"
         },
+        "time": "2012-09-11 05:10:08",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
@@ -971,24 +990,25 @@
     },
     {
         "name": "sensio/framework-extra-bundle",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
+        "version": "2.1.x-dev",
+        "version_normalized": "2.1.9999999.9999999-dev",
         "target-dir": "Sensio/Bundle/FrameworkExtraBundle",
         "source": {
             "type": "git",
             "url": "https://github.com/sensio/SensioFrameworkExtraBundle",
-            "reference": "v2.1.0"
+            "reference": "6d393099b17f301cc09a1d586292ed0b84763011"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/sensio/SensioFrameworkExtraBundle/zipball/v2.1.0",
-            "reference": "v2.1.0",
+            "url": "https://github.com/sensio/SensioFrameworkExtraBundle/zipball/6d393099b17f301cc09a1d586292ed0b84763011",
+            "reference": "6d393099b17f301cc09a1d586292ed0b84763011",
             "shasum": ""
         },
         "require": {
-            "doctrine/common": ">=2.1,<2.4-dev",
-            "symfony/framework-bundle": "2.1.*"
+            "symfony/framework-bundle": "2.1.*",
+            "doctrine/common": ">=2.1,<2.4-dev"
         },
+        "time": "2012-09-16 07:27:55",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
@@ -1024,12 +1044,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/sensio/SensioGeneratorBundle",
-            "reference": "v2.1.0-RC2"
+            "reference": "v2.1.0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/sensio/SensioGeneratorBundle/zipball/v2.1.0-RC2",
-            "reference": "v2.1.0-RC2",
+            "url": "https://github.com/sensio/SensioGeneratorBundle/zipball/v2.1.0",
+            "reference": "v2.1.0",
             "shasum": ""
         },
         "require": {
@@ -1043,6 +1063,7 @@
         "suggest": {
             "doctrine/doctrine-bundle": "to generate entities and their crud controller"
         },
+        "time": "2012-08-28 07:16:11",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
@@ -1074,19 +1095,35 @@
         "source": {
             "type": "git",
             "url": "https://github.com/schmittjoh/JMSDiExtraBundle",
-            "reference": "af219527024c584d7311aa855d7522429c5bdb67"
+            "reference": "b94feeee8f57060598fdc7a3ef2527182b3946b5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://github.com/schmittjoh/JMSDiExtraBundle/zipball/af219527024c584d7311aa855d7522429c5bdb67",
-            "reference": "af219527024c584d7311aa855d7522429c5bdb67",
+            "url": "https://github.com/schmittjoh/JMSDiExtraBundle/zipball/b94feeee8f57060598fdc7a3ef2527182b3946b5",
+            "reference": "b94feeee8f57060598fdc7a3ef2527182b3946b5",
             "shasum": ""
         },
         "require": {
             "symfony/framework-bundle": "2.1.*",
             "jms/aop-bundle": "1.0.*",
-            "jms/metadata": "1.1.*"
+            "jms/metadata": "1.1.*",
+            "symfony/process": "2.1.*",
+            "symfony/finder": "2.1.*"
         },
+        "require-dev": {
+            "jms/security-extra-bundle": "1.*",
+            "symfony/validator": "*",
+            "symfony/form": "*",
+            "symfony/class-loader": "*",
+            "symfony/yaml": "*",
+            "symfony/browser-kit": "*",
+            "symfony/security-bundle": "*",
+            "symfony/twig-bundle": "*",
+            "sensio/framework-extra-bundle": "*",
+            "doctrine/doctrine-bundle": "*",
+            "doctrine/orm": "*"
+        },
+        "time": "2012-09-17 09:09:06",
         "type": "symfony-bundle",
         "installation-source": "source",
         "autoload": {
@@ -1101,7 +1138,7 @@
             {
                 "name": "Johannes M. Schmitt",
                 "email": "schmittjoh@gmail.com",
-                "homepage": "https://github.com/schmittjoh",
+                "homepage": "http://jmsyst.com",
                 "role": "Developer of wrapped JMSSerializerBundle"
             }
         ],
@@ -1149,6 +1186,7 @@
             "symfony/form": "*",
             "symfony/validator": "*"
         },
+        "time": "2012-09-06 16:12:23",
         "type": "symfony-bundle",
         "installation-source": "source",
         "autoload": {
@@ -1163,7 +1201,7 @@
             {
                 "name": "Johannes M. Schmitt",
                 "email": "schmittjoh@gmail.com",
-                "homepage": "https://github.com/schmittjoh",
+                "homepage": "http://jmsyst.com",
                 "role": "Developer of wrapped JMSSerializerBundle"
             }
         ],
