@@ -1,0 +1,7 @@
+parameters:
+#    freebeats_home.example.class: freebeats\HomeBundle\Example
+
+services:
+#    freebeats_home.example:
+#        class: %freebeats_home.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

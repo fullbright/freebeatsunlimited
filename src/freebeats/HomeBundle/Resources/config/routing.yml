@@ -1,0 +1,3 @@
+freebeats_home_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: freebeatsHomeBundle:Default:index }
