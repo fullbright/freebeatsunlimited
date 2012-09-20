@@ -1,3 +1,11 @@
+freebeats_customer:
+    resource: "@freebeatsCustomerBundle/Resources/config/routing.yml"
+    prefix:   /
+
+freebeats_home:
+    resource: "@freebeatsHomeBundle/Resources/config/routing.yml"
+    prefix:   /
+
 # Internal routing configuration to handle ESI
 #_internal:
 #    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
