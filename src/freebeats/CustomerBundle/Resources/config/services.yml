@@ -1,0 +1,7 @@
+parameters:
+#    freebeats_customer.example.class: freebeats\CustomerBundle\Example
+
+services:
+#    freebeats_customer.example:
+#        class: %freebeats_customer.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
