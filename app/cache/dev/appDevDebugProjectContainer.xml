@@ -19,6 +19,8 @@
       <parameter key="JMSAopBundle">JMS\AopBundle\JMSAopBundle</parameter>
       <parameter key="JMSDiExtraBundle">JMS\DiExtraBundle\JMSDiExtraBundle</parameter>
       <parameter key="JMSSecurityExtraBundle">JMS\SecurityExtraBundle\JMSSecurityExtraBundle</parameter>
+      <parameter key="freebeatsHomeBundle">freebeats\HomeBundle\freebeatsHomeBundle</parameter>
+      <parameter key="freebeatsCustomerBundle">freebeats\CustomerBundle\freebeatsCustomerBundle</parameter>
       <parameter key="AcmeDemoBundle">Acme\DemoBundle\AcmeDemoBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
@@ -27,11 +29,11 @@
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">appDevDebugProjectContainer</parameter>
     <parameter key="database_driver">pdo_mysql</parameter>
-    <parameter key="database_host">localhost</parameter>
-    <parameter key="database_port">null</parameter>
-    <parameter key="database_name">symfony</parameter>
-    <parameter key="database_user">root</parameter>
-    <parameter key="database_password">null</parameter>
+    <parameter key="database_host">127.0.0.1</parameter>
+    <parameter key="database_port">3306</parameter>
+    <parameter key="database_name">freebeats</parameter>
+    <parameter key="database_user">freebeats</parameter>
+    <parameter key="database_password">6SnGVFCYe8NQsHnB</parameter>
     <parameter key="mailer_transport">smtp</parameter>
     <parameter key="mailer_host">localhost</parameter>
     <parameter key="mailer_user">null</parameter>
@@ -459,8 +461,8 @@
     <parameter key="jms_di_extra.directories" type="collection"/>
     <parameter key="jms_di_extra.cache_dir">/Users/sergio/Documents/Developpement/Freebeats/freebeatsunlimited/app/cache/dev/jms_diextra</parameter>
     <parameter key="jms_di_extra.doctrine_integration">true</parameter>
-    <parameter key="jms_di_extra.doctrine_integration.entity_manager.file">/Users/sergio/Documents/Developpement/Freebeats/freebeatsunlimited/app/cache/dev/jms_diextra/doctrine/EntityManager_5058f23f80e2c.php</parameter>
-    <parameter key="jms_di_extra.doctrine_integration.entity_manager.class">EntityManager5058f23f80e2c_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager</parameter>
+    <parameter key="jms_di_extra.doctrine_integration.entity_manager.file">/Users/sergio/Documents/Developpement/Freebeats/freebeatsunlimited/app/cache/dev/jms_diextra/doctrine/EntityManager_505da47fbbd01.php</parameter>
+    <parameter key="jms_di_extra.doctrine_integration.entity_manager.class">EntityManager505da47fbbd01_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager</parameter>
     <parameter key="security.secured_services" type="collection"/>
     <parameter key="security.access.method_interceptor.class">JMS\SecurityExtraBundle\Security\Authorization\Interception\MethodSecurityInterceptor</parameter>
     <parameter key="security.access.method_access_control" type="collection"/>
@@ -2076,11 +2078,11 @@
     <service id="doctrine.dbal.logger.profiling.default" class="Doctrine\DBAL\Logging\DebugStack" public="false"/>
     <service id="doctrine.dbal.default_connection" class="stdClass" factory-method="createConnection" factory-service="doctrine.dbal.connection_factory">
       <argument type="collection">
-        <argument key="dbname">symfony</argument>
-        <argument key="host">localhost</argument>
-        <argument key="port">null</argument>
-        <argument key="user">root</argument>
-        <argument key="password">null</argument>
+        <argument key="dbname">freebeats</argument>
+        <argument key="host">127.0.0.1</argument>
+        <argument key="port">3306</argument>
+        <argument key="user">freebeats</argument>
+        <argument key="password">6SnGVFCYe8NQsHnB</argument>
         <argument key="charset">UTF8</argument>
         <argument key="driver">pdo_mysql</argument>
         <argument key="driverOptions" type="collection"/>
@@ -2133,15 +2135,17 @@
     <service id="doctrine.orm.default_manager_configurator" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator">
       <argument type="collection"/>
     </service>
-    <service id="doctrine.orm.default_entity_manager" class="EntityManager5058f23f80e2c_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager">
-      <file>/Users/sergio/Documents/Developpement/Freebeats/freebeatsunlimited/app/cache/dev/jms_diextra/doctrine/EntityManager_5058f23f80e2c.php</file>
+    <service id="doctrine.orm.default_entity_manager" class="EntityManager505da47fbbd01_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager">
+      <file>/Users/sergio/Documents/Developpement/Freebeats/freebeatsunlimited/app/cache/dev/jms_diextra/doctrine/EntityManager_505da47fbbd01.php</file>
       <argument type="service">
         <service class="Doctrine\ORM\EntityManager" factory-method="create" public="false">
           <argument type="service" id="doctrine.dbal.default_connection"/>
           <argument type="service">
             <service class="Doctrine\ORM\Configuration" public="false">
               <call method="setEntityNamespaces">
-                <argument type="collection"/>
+                <argument type="collection">
+                  <argument key="freebeatsCustomerBundle">freebeats\CustomerBundle\Entity</argument>
+                </argument>
               </call>
               <call method="setMetadataCacheImpl">
                 <argument type="service">
@@ -2172,7 +2176,19 @@
               </call>
               <call method="setMetadataDriverImpl">
                 <argument type="service">
-                  <service class="Doctrine\ORM\Mapping\Driver\DriverChain" public="false"/>
+                  <service class="Doctrine\ORM\Mapping\Driver\DriverChain" public="false">
+                    <call method="addDriver">
+                      <argument type="service">
+                        <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+                          <argument type="service" id="annotation_reader"/>
+                          <argument type="collection">
+                            <argument>/Users/sergio/Documents/Developpement/Freebeats/freebeatsunlimited/src/freebeats/CustomerBundle/Entity</argument>
+                          </argument>
+                        </service>
+                      </argument>
+                      <argument>freebeats\CustomerBundle\Entity</argument>
+                    </call>
+                  </service>
                 </argument>
               </call>
               <call method="setProxyDir">

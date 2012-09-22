@@ -162,6 +162,31 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // freebeats_customer_list
+        if ($pathinfo === '/home') {
+            return array (  '_controller' => 'freebeats\\CustomerBundle\\Controller\\DefaultController::indexAction',  '_route' => 'freebeats_customer_list',);
+        }
+
+        // freebeats_customer_create
+        if ($pathinfo === '/create') {
+            return array (  '_controller' => 'freebeats\\CustomerBundle\\Controller\\DefaultController::createAction',  '_route' => 'freebeats_customer_create',);
+        }
+
+        // freebeats_customer_details
+        if (0 === strpos($pathinfo, '/show') && preg_match('#^/show/(?<id>[^/]+)$#s', $pathinfo, $matches)) {
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'freebeats\\CustomerBundle\\Controller\\DefaultController::showAction',)), array('_route' => 'freebeats_customer_details'));
+        }
+
+        // freebeats_customer_update
+        if (0 === strpos($pathinfo, '/update') && preg_match('#^/update/(?<id>[^/]+)$#s', $pathinfo, $matches)) {
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'freebeats\\CustomerBundle\\Controller\\DefaultController::updateAction',)), array('_route' => 'freebeats_customer_update'));
+        }
+
+        // freebeats_home_homepage
+        if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?<name>[^/]+)$#s', $pathinfo, $matches)) {
+            return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'freebeats\\HomeBundle\\Controller\\DefaultController::indexAction',)), array('_route' => 'freebeats_home_homepage'));
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }
