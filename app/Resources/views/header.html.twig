@@ -10,7 +10,9 @@
         <img id="u1318_img" src="{{ asset('bundles/freebeats/images/vise.png') }}" alt="" width="12" height="13">
        </div>
       </div>
-      <a class="nonblock nontext MuseLinkActive grpelem" id="u324" href="index.html"><!-- image --><img id="u324_img" src="{{ asset('bundles/freebeats/images/logo.png') }}" alt="" width="157" height="62"></a>
+      <a class="nonblock nontext MuseLinkActive grpelem" id="u324" href="{{ path('freebeats_home_homepage') }}"><!-- image -->
+      	<img id="u324_img" src="{{ asset('bundles/freebeats/images/logo.png') }}" alt="" width="157" height="62">
+      </a>
       <div class="clearfix grpelem" id="pu1321"><!-- column -->
        <div class="colelem" id="u1321"><!-- image -->
         <img id="u1321_img" src="{{ asset('bundles/freebeats/images/vise.png') }}" alt="" width="12" height="13">
@@ -34,11 +36,15 @@
      <div class="clearfix grpelem" id="u2708"><!-- group -->
       <div class="pointer_cursor MuseLinkActive gradient rounded-corners clearfix grpelem" id="u346"><!-- group -->
        <a class="block" href="index.html"></a>
-       <a class="nonblock nontext MuseLinkActive grpelem" id="u347" href="index.html"><!-- image --><img class="MuseLinkActive" id="u347_img" src="{{ asset('bundles/freebeats/images/home.png') }}" alt="" width="26" height="24"></a>
+       <a class="nonblock nontext MuseLinkActive grpelem" id="u347" href="{{ path('freebeats_home_homepage') }}"><!-- image -->
+       	<img class="MuseLinkActive" id="u347_img" src="{{ asset('bundles/freebeats/images/home.png') }}" alt="" width="26" height="24">
+       </a>
       </div>
      </div>
+     
+     <!-- SIDE BAR -->
      <div class="shadow gradient rounded-corners grpelem" id="u556"><!-- simple frame --></div>
-     <a class="nonblock nontext grpelem" id="u880" href="songade.html"><!-- simple frame --></a>
+     <a class="nonblock nontext grpelem" id="u880" href="{{ path('freebeats_survey_homepage') }}"><!-- simple frame --></a>
      <div class="grpelem" id="u908"><!-- image -->
       <img id="u908_img" src="{{ asset('bundles/freebeats/images/vise.png') }}" alt="" width="12" height="13">
      </div>
@@ -51,21 +57,32 @@
      <div class="grpelem" id="u916"><!-- image -->
       <img id="u916_img" src="{{ asset('bundles/freebeats/images/vise.png') }}" alt="" width="12" height="13">
      </div>
-     <a class="nonblock nontext MuseLinkActive grpelem" id="u71-6" href="index.html"><!-- rasterized frame --><img id="u71-6_img" src="{{ asset('bundles/freebeats/images/u71-6.png') }}" alt="FREEDOM BEATS ILLIMITE" width="19" height="266"></a>
+     <a class="nonblock nontext MuseLinkActive grpelem" id="u71-6" href="{{ path('freebeats_home_homepage') }}"><!-- rasterized frame -->
+     	<img id="u71-6_img" src="{{ asset('bundles/freebeats/images/u71-6.png') }}" alt="FREEDOM BEATS ILLIMITE" width="19" height="266">
+     </a>
      <div class="grpelem" id="u5843"><!-- image --></div>
-     <div class="grpelem" id="u5899"><!-- simple frame --></div>
-     <div class="grpelem" id="u5910"><!-- simple frame --></div>
+     <a class="grpelem" id="u5899" href="http://www.facebook.com/pages/Freedom-Beats/173733999420767" target="_blank"><!-- simple frame --></a>
+     <a class="grpelem" id="u5910" href="https://twitter.com/#!/BeatsFreedom" target="_blank"><!-- simple frame --></a>
      <ul class="MenuBar clearfix grpelem" id="menuu193"><!-- row -->
       <li class="MenuItemContainer clearfix grpelem" id="u211"><!-- vertical box -->
        <div class="MenuItem MenuItemWithSubMenu clearfix colelem" id="pu212"><!-- group -->
-        <a class="nonblock nontext rounded-corners grpelem" id="u212" href="la-carte-illimit%c3%a9.html"><!-- horizontal box --><div class="_u212 f3s_top"></div><div class="_u212 f3s_mid clearfix"><div class="MenuItemLabel NoWrap clearfix grpelem" id="u215-4"><!-- content --><p>La Carte Illimité</p></div></div><div class="_u212 f3s_bot"></div></a>
+        <a class="nonblock nontext rounded-corners grpelem" id="u212" href="{{ path('freebeats_unlimitedcard_homepage') }}"><!-- horizontal box -->
+        	<div class="_u212 f3s_top"></div>
+        	<div class="_u212 f3s_mid clearfix">
+        		<div class="MenuItemLabel NoWrap clearfix grpelem" id="u215-4"><!-- content -->
+        			<p>La carte illimitée</p>
+        		</div>
+        	</div>
+        	<div class="_u212 f3s_bot">
+        	</div>
+        </a>
        </div>
       </li>
      </ul>
      <ul class="MenuBar clearfix grpelem" id="menuu6075"><!-- row -->
       <li class="MenuItemContainer clearfix grpelem" id="u6076"><!-- vertical box -->
        <div class="MenuItem MenuItemWithSubMenu clearfix colelem" id="pu6079"><!-- group -->
-        <a class="nonblock nontext rounded-corners grpelem" id="u6079" href="abonnez-vous.html">
+        <a class="nonblock nontext rounded-corners grpelem" id="u6079" href="{{ path('freebeats_subscribe_homepage') }}">
 	        <!-- horizontal box -->
 	        <div class="_u6079 f3s_top"></div>
 	        <div class="_u6079 f3s_mid clearfix">
@@ -83,10 +100,14 @@
      <ul class="MenuBar clearfix grpelem" id="menuu6101"><!-- row -->
       <li class="MenuItemContainer clearfix grpelem" id="u6102"><!-- vertical box -->
        <div class="MenuItem MenuItemWithSubMenu clearfix colelem" id="pu6105"><!-- group -->
-        <a class="nonblock nontext rounded-corners grpelem" id="u6105" href="a-propos.html">
+        <a class="nonblock nontext rounded-corners grpelem" id="u6105" href="{{ path('freebeats_about_homepage') }}">
 	        <!-- horizontal box --><div class="_u6105 f3s_top"></div>
-	        <div class="_u6105 f3s_mid clearfix"><div class="MenuItemLabel NoWrap clearfix grpelem" id="u6106-4"><!-- content --><p>A propos</p></div>
-	        </div><div class="_u6105 f3s_bot"></div>
+	        <div class="_u6105 f3s_mid clearfix">
+	        	<div class="MenuItemLabel NoWrap clearfix grpelem" id="u6106-4"><!-- content -->
+	        		<p>A propos</p>
+	        	</div>
+	        </div>
+	        <div class="_u6105 f3s_bot"></div>
         </a>
        </div>
       </li>
@@ -94,9 +115,15 @@
      <ul class="MenuBar clearfix grpelem" id="menuu6049"><!-- row -->
       <li class="MenuItemContainer clearfix grpelem" id="u6050"><!-- vertical box -->
        <div class="MenuItem MenuItemWithSubMenu clearfix colelem" id="pu6053"><!-- group -->
-        <a class="nonblock nontext rounded-corners grpelem" id="u6053" href="les-salles-pr%c3%a9senties.html"><!-- horizontal box -->
+        <a class="nonblock nontext rounded-corners grpelem" id="u6053" href="{{ path('freebeats_showroom_homepage') }}"><!-- horizontal box -->
         <div class="_u6053 f3s_top"></div>
-        <div class="_u6053 f3s_mid clearfix"><div class="MenuItemLabel NoWrap clearfix grpelem" id="u6054-4"><!-- content --><p>Les Salles présenties</p></div></div><div class="_u6053 f3s_bot"></div></a>
+        <div class="_u6053 f3s_mid clearfix">
+        	<div class="MenuItemLabel NoWrap clearfix grpelem" id="u6054-4"><!-- content -->
+        		<p>Les salles présenties</p>
+        	</div>
+        </div>
+        <div class="_u6053 f3s_bot"></div>
+        </a>
        </div>
       </li>
      </ul>
