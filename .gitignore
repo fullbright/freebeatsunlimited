@@ -1,3 +1,5 @@
+app/logs/*
+app/cache/*
 web/uploads/*
 config/databases.yml
 config/propel.ini
@@ -11,5 +13,3 @@ lib/model/doctrine/*Plugin/base/Base*
 lib/model/om/*
 lib/model/map/*
 vendor/*
-app/cache/*
-app/logs/*
