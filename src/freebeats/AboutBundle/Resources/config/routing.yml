@@ -1,0 +1,3 @@
+freebeats_about_homepage:
+    pattern:  /about
+    defaults: { _controller: freebeatsAboutBundle:Default:index }
