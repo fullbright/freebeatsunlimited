@@ -1,0 +1,3 @@
+freebeats_showroom_homepage:
+    pattern:  /showrooms
+    defaults: { _controller: freebeatsShowroomBundle:Default:index }

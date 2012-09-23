@@ -1,0 +1,7 @@
+parameters:
+#    freebeats_showroom.example.class: freebeats\ShowroomBundle\Example
+
+services:
+#    freebeats_showroom.example:
+#        class: %freebeats_showroom.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
