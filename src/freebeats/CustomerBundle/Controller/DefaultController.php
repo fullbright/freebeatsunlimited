@@ -10,8 +10,8 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-    	$customer = $this->getDoctrine()->getRepository("freebeatsCustomerBundle:Customer")->findAll();
-        return $this->render('freebeatsCustomerBundle:Default:index.html.twig', array('name' => $customer));
+    	//$customer = $this->getDoctrine()->getRepository("freebeatsCustomerBundle:Customer")->findAll();
+        return $this->render('freebeatsCustomerBundle:Default:index.html.twig');
     }
     
     public function createAction()
@@ -29,26 +29,33 @@ class DefaultController extends Controller
     	$em->persist($customer);
     	$em->flush();
     	
-    	return new Response("Le client a ŽtŽ crŽŽ avec succs. Id = ".$customer->getId());
+    	$form = $this->createFormBuilder($customer)
+    	->add('firstname', 'text')
+    	->add('lastname', 'text')
+    	->getForm();
+    	return $this->render('freebeatsCustomerBundle:Default:createcustomer.html.twig', 
+    			array('form' => $form->createView(),)
+    	);
     }
     
     public function showAction($id)
     {
-    	$customer = retrieveCustomer($id);
+    	$customer = $this->retrieveCustomer($id);
     	//$customer = $this->getDoctrine()->getRepository("freebeatsCustomerBundle:Customer")->findOneBy(
     	//		array("email" => $email, "firstName" => $firstName));
     	
-    	if(!customer)
+    	if(!$customer)
     	{
     		$this->createNotFoundException("Impossible to find custumer which id is ".$id);
     	}
     	
     	//customer found
+    	return new Response("Your customer has been found. Last name : ".$customer->getLastName());
     }
     
     public function updateAction($id)
     {
-    	$customer = retrieveCustomer($id);
+    	$customer = $this->retrieveCustomer($id);
     	
     	$customer->setFirstName("New first name !");
     	$em->flush();
@@ -63,6 +70,7 @@ class DefaultController extends Controller
     	
     	$em->remove($customer);
     	$em->flush();
+    	return new Response("Your customer has been deleted.");
     }
     
     private function retrieveCustomer($id)

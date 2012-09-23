@@ -1,314 +1,75 @@
 {% extends '::base.html.twig' %}
 
-{% block body %}
-Hello {{ name }}!
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/freebeatscustomer/css/abonnez-vous.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
 
-  <div class="shadow rounded-corners clearfix" id="page"><!-- column -->
-   <div class="position_content" id="page_position_content">
-    <div class="clearfix colelem" id="pu329"><!-- group -->
-     <div class="grpelem" id="u329"><!-- image -->
-      <img id="u329_img" src="images/shadow2.png" alt="" width="1024" height="18">
-     </div>
-     <div class="gradient rounded-corners clearfix grpelem" id="u318"><!-- group -->
-      <div class="clearfix grpelem" id="pu1315"><!-- column -->
-       <div class="colelem" id="u1315"><!-- image -->
-        <img id="u1315_img" src="images/vise.png" alt="" width="12" height="13">
-       </div>
-       <div class="colelem" id="u1318"><!-- image -->
-        <img id="u1318_img" src="images/vise.png" alt="" width="12" height="13">
-       </div>
-      </div>
-      <a class="nonblock nontext MuseLinkActive grpelem" id="u324" href="index.html"><!-- image --><img id="u324_img" src="images/logo.png" alt="" width="157" height="62"></a>
-      <div class="clearfix grpelem" id="pu1321"><!-- column -->
-       <div class="colelem" id="u1321"><!-- image -->
-        <img id="u1321_img" src="images/vise.png" alt="" width="12" height="13">
-       </div>
-       <div class="colelem" id="u1324"><!-- image -->
-        <img id="u1324_img" src="images/vise.png" alt="" width="12" height="13">
-       </div>
-      </div>
-     </div>
-     <div class="grpelem" id="u5889"><!-- image -->
-      <img id="u5889_img" src="images/waves.png" alt="" width="1024" height="420">
-     </div>
-     <div class="grpelem" id="u339"><!-- image -->
-      <img id="u339_img" src="images/page%20shadow.png" alt="" width="1003" height="66">
-     </div>
-     <div class="gradient rounded-corners grpelem" id="u70"><!-- simple frame --></div>
-     <div class="MenuBar grpelem" id="menuu73"><!-- row --></div>
-     <div class="MenuBar grpelem" id="menuu268"><!-- row --></div>
-     <div class="MenuBar grpelem" id="menuu218"><!-- row --></div>
-     <div class="MenuBar grpelem" id="menuu6023"><!-- row --></div>
-     <div class="clearfix grpelem" id="u2708"><!-- group -->
-      <div class="pointer_cursor MuseLinkActive gradient rounded-corners clearfix grpelem" id="u346"><!-- group -->
-       <a class="block" href="index.html"></a>
-       <a class="nonblock nontext MuseLinkActive grpelem" id="u347" href="index.html"><!-- image --><img class="MuseLinkActive" id="u347_img" src="images/home.png" alt="" width="26" height="24"></a>
-      </div>
-     </div>
-     <div class="shadow gradient rounded-corners grpelem" id="u556"><!-- simple frame --></div>
-     <a class="nonblock nontext grpelem" id="u880" href="songade.html"><!-- simple frame --></a>
-     <div class="grpelem" id="u908"><!-- image -->
-      <img id="u908_img" src="images/vise.png" alt="" width="12" height="13">
-     </div>
-     <div class="grpelem" id="u919"><!-- image -->
-      <img id="u919_img" src="images/vise.png" alt="" width="12" height="13">
-     </div>
-     <div class="grpelem" id="u913"><!-- image -->
-      <img id="u913_img" src="images/vise.png" alt="" width="12" height="13">
-     </div>
-     <div class="grpelem" id="u916"><!-- image -->
-      <img id="u916_img" src="images/vise.png" alt="" width="12" height="13">
-     </div>
-     <a class="nonblock nontext MuseLinkActive grpelem" id="u71-6" href="index.html"><!-- rasterized frame --><img id="u71-6_img" src="images/u71-6.png" alt="FREEDOM BEATS ILLIMITE" width="19" height="266"></a>
-     <div class="grpelem" id="u5843"><!-- image --></div>
-     <div class="grpelem" id="u5899"><!-- simple frame --></div>
-     <div class="grpelem" id="u5910"><!-- simple frame --></div>
-     <ul class="MenuBar clearfix grpelem" id="menuu193"><!-- row -->
-      <li class="MenuItemContainer clearfix grpelem" id="u211"><!-- vertical box -->
-       <div class="MenuItem MenuItemWithSubMenu clearfix colelem" id="pu212"><!-- group -->
-        <a class="nonblock nontext rounded-corners grpelem" id="u212" href="la-carte-illimit%c3%a9.html"><!-- horizontal box --><div class="_u212 f3s_top"></div><div class="_u212 f3s_mid clearfix"><div class="MenuItemLabel NoWrap clearfix grpelem" id="u215-4"><!-- content --><p>La Carte Illimité</p></div></div><div class="_u212 f3s_bot"></div></a>
-       </div>
-      </li>
-     </ul>
-     <ul class="MenuBar clearfix grpelem" id="menuu6075"><!-- row -->
-      <li class="MenuItemContainer clearfix grpelem" id="u6076"><!-- vertical box -->
-       <div class="MenuItem MenuItemWithSubMenu clearfix colelem" id="pu6079"><!-- group -->
-        <a class="nonblock nontext rounded-corners grpelem" id="u6079" href="abonnez-vous.html"><!-- horizontal box --><div class="_u6079 f3s_top"></div><div class="_u6079 f3s_mid clearfix"><div class="MenuItemLabel NoWrap clearfix grpelem" id="u6080-4"><!-- content --><p>Abonnez-vous</p></div></div><div class="_u6079 f3s_bot"></div></a>
-       </div>
-      </li>
-     </ul>
-     <ul class="MenuBar clearfix grpelem" id="menuu6101"><!-- row -->
-      <li class="MenuItemContainer clearfix grpelem" id="u6102"><!-- vertical box -->
-       <div class="MenuItem MenuItemWithSubMenu clearfix colelem" id="pu6105"><!-- group -->
-        <a class="nonblock nontext rounded-corners grpelem" id="u6105" href="a-propos.html"><!-- horizontal box --><div class="_u6105 f3s_top"></div><div class="_u6105 f3s_mid clearfix"><div class="MenuItemLabel NoWrap clearfix grpelem" id="u6106-4"><!-- content --><p>A propos</p></div></div><div class="_u6105 f3s_bot"></div></a>
-       </div>
-      </li>
-     </ul>
-     <ul class="MenuBar clearfix grpelem" id="menuu6049"><!-- row -->
-      <li class="MenuItemContainer clearfix grpelem" id="u6050"><!-- vertical box -->
-       <div class="MenuItem MenuItemWithSubMenu clearfix colelem" id="pu6053"><!-- group -->
-        <a class="nonblock nontext rounded-corners grpelem" id="u6053" href="les-salles-pr%c3%a9senties.html"><!-- horizontal box --><div class="_u6053 f3s_top"></div><div class="_u6053 f3s_mid clearfix"><div class="MenuItemLabel NoWrap clearfix grpelem" id="u6054-4"><!-- content --><p>Les Salles présenties</p></div></div><div class="_u6053 f3s_bot"></div></a>
-       </div>
-      </li>
-     </ul>
-     <div class="grpelem" id="u6167"><!-- custom html -->
-<!--champs rechercher -->
-<form class="search" method="post" action="recherche.html">
-		 <input type="text" name="q" placeholder="rechercher..." id="search_css">
-	 </form>
-</div>
-     <div class="clearfix grpelem" id="pu4208"><!-- column -->
-      <div class="rounded-corners colelem" id="u4208"><!-- custom html -->
-       <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="700" height="235" id="FlashID" title="Anime">
-  <param name="movie" value="Flash swf/Animation_freedom_beats.swf">
-  <param name="quality" value="high">
-  <param name="wmode" value="opaque">
-  <param name="swfversion" value="6.0.65.0">
-  <!-- Cette balise <param> invite les utilisateurs de Flash Player en version 6.0 r65 et ult�rieure � t�l�charger la version la plus r�cente de Flash Player. Supprimez-la si vous ne voulez pas que cette invite soit visible. -->
-  <param name="expressinstall" value="scripts/expressInstall.swf">
-  <!-- La balise <object> suivante est destin�e aux navigateurs autres qu'IE. Supprimez-la d'IE � l'aide d'IECC. -->
-  <!--[if !IE]>-->
-  <object type="application/x-shockwave-flash" data="Flash swf/Animation_freedom_beats.swf" width="710" height="235">
-    <!--<![endif]-->
-    <param name="quality" value="high">
-    <param name="wmode" value="opaque">
-    <param name="swfversion" value="6.0.65.0">
-    <param name="expressinstall" value="scripts/expressInstall.swf">
-    <!-- Le navigateur affichera le contenu alternatif suivant pour les utilisateurs d'un lecteur Flash de version 6.0 ou de versions plus anciennes. -->
-    <div>
-      <h4>Le contenu de cette page nécessite une version plus récente d'Adobe Flash Player.</h4>
-      <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Obtenir le lecteur Adobe Flash" width="112" height="33"></a></p>
-    </div>
-    <!--[if !IE]>-->
-  </object>
-  <!--<![endif]-->
-</object>
-</div>
-      <div class="colelem" id="u930"><!-- image -->
-       <img id="u930_img" src="images/ombre.png" alt="" width="732" height="24">
-      </div>
-      <div class="clearfix colelem" id="pu5798"><!-- group -->
-       <div class="grpelem" id="u5798"><!-- image -->
-        <img id="u5798_img" src="images/shadox%20corne%20gauche.png" alt="" width="571" height="305">
-       </div>
-       <div class="PamphletWidget clearfix grpelem wp-slideshow-playing" id="pamphletu5433"><!-- group -->
-        <div class="ThumbGroup clearfix grpelem" id="u5447"><!-- none box -->
-         <div class="popup_anchor">
-          <div class="Thumb popup_element wp-tab-active PamphletThumbSelected" id="u5450"><!-- simple frame --></div>
-         </div>
-         <div class="popup_anchor">
-          <div class="Thumb popup_element" id="u5479"><!-- simple frame --></div>
-         </div>
-         <div class="popup_anchor">
-          <div class="Thumb popup_element" id="u5481"><!-- simple frame --></div>
-         </div>
-         <div class="popup_anchor">
-          <div class="Thumb popup_element" id="u5483"><!-- simple frame --></div>
-         </div>
-         <div class="popup_anchor">
-          <div class="Thumb popup_element" id="u5485"><!-- simple frame --></div>
-         </div>
-         <div class="popup_anchor">
-          <div class="Thumb popup_element" id="u5487"><!-- simple frame --></div>
-         </div>
-         <div class="popup_anchor">
-          <div class="Thumb popup_element" id="u5762"><!-- simple frame --></div>
+{% block content %}
+
+<div class="grpelem" id="u2774"><!-- simple frame --></div>
+<div class="PamphletWidget clearfix grpelem" id="pamphletu3135"><!-- group -->
+      <div class="ThumbGroup clearfix grpelem" id="u3163"><!-- none box -->
+       <div class="popup_anchor">
+        <div class="Thumb popup_element rounded-corners clearfix wp-tab-active PamphletThumbSelected" id="u3166"><!-- group -->
+         <div class="clearfix grpelem" id="u3278-4"><!-- content -->
+          <p>En ligne</p>
          </div>
         </div>
-        <div class="popup_anchor">
-         <div class="ContainerGroup clearfix" id="u5434" style="width: 0px; height: 0px; "><!-- stack box -->
-          <div class="Container rounded-corners clearfix grpelem wp-panel wp-panel-active" id="u5437" style="display: block; "><!-- group -->
-           <div class="grpelem" id="u5792"><!-- image -->
-            <img id="u5792_img" src="images/photo7.png" alt="" width="724" height="278">
-           </div>
-          </div>
-          <div class="Container rounded-corners clearfix grpelem wp-panel" id="u5480" style="display: none; "><!-- group -->
-           <div class="grpelem" id="u5787"><!-- image -->
-            <img id="u5787_img" src="images/photo6.png" alt="" width="724" height="278">
-           </div>
-          </div>
-          <div class="Container rounded-corners clearfix grpelem wp-panel" id="u5482" style="display: none; "><!-- group -->
-           <div class="clearfix grpelem" id="u5782"><!-- image -->
-            <div id="u5782_clip">
-             <img class="position_content" id="u5782_img" src="images/photo5.png" alt="" width="724" height="278">
+       </div>
+       <div class="popup_anchor">
+        <div class="Thumb popup_element rounded-corners clearfix" id="u3164"><!-- group -->
+         <div class="clearfix grpelem" id="u3300-4"><!-- content -->
+          <p>Par correspondance</p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="popup_anchor">
+       <div class="wp-slideshow-clip" style="position: absolute; width: 637px; height: 229px; overflow: hidden; left: 205px; top: 27px; "><div class="ContainerGroup clearfix" id="u3142" style="position: relative; top: 0px; left: 0px; width: 637px; height: 458px; margin: 0px; padding: 0px; overflow: visible; "><!-- stack box -->
+        <div class="Container rounded-corners clearfix grpelem wp-panel wp-panel-active" id="u3148" style="left: 0px; top: 0px; margin: 0px; position: absolute; "><!-- column -->
+         <div class="position_content" id="u3148_position_content">
+          <div class="PamphletWidget clearfix colelem" id="pamphletu4644"><!-- group -->
+           <div class="ThumbGroup clearfix grpelem" id="u4645"><!-- none box -->
+            <div class="popup_anchor">
+             <div class="Thumb popup_element rounded-corners clearfix wp-tab-active PamphletThumbSelected" id="u4647"><!-- group -->
+              <div class="grpelem" id="u4648"><!-- image --></div>
+              <div class="clearfix grpelem" id="u4672-4"><!-- content -->
+               <a class="customersubscribelink" href="{{ path('freebeats_customer_create') }}"><p>Je m'abonne</p></a>
+              </div>
+             </div>
             </div>
            </div>
-          </div>
-          <div class="Container rounded-corners clearfix grpelem wp-panel" id="u5484" style="display: none; "><!-- group -->
-           <div class="grpelem" id="u5777"><!-- rasterized frame -->
-            <img id="u5777_img" src="images/photo4-u5777.png" alt="" width="724" height="278">
+           <div class="popup_anchor">
+            
+           </div>
+           <div class="popup_anchor">
+            
            </div>
           </div>
-          <div class="Container rounded-corners clearfix grpelem wp-panel" id="u5486" style="display: none; "><!-- group -->
-           <div class="grpelem" id="u5772"><!-- image -->
-            <img id="u5772_img" src="images/photo3.png" alt="" width="724" height="278">
-           </div>
-          </div>
-          <div class="Container rounded-corners clearfix grpelem wp-panel" id="u5488" style="display: none; "><!-- group -->
-           <div class="grpelem" id="u5757"><!-- image -->
-            <img id="u5757_img" src="images/photo1.png" alt="" width="724" height="278">
-           </div>
-          </div>
-          <div class="Container rounded-corners clearfix grpelem wp-panel" id="u5763" style="display: none; "><!-- group -->
-           <div class="grpelem" id="u5767"><!-- image -->
-            <img id="u5767_img" src="images/photo2.png" alt="" width="724" height="278">
+          <div class="rounded-corners clearfix colelem" id="u3380"><!-- group -->
+           <div class="clearfix grpelem" id="u3378-7"><!-- content -->
+            <p>Abonnez-vous en toute simplicité!</p>
+            <p>&nbsp;</p>
+            <p>Vous pouvez vous abonner en ligne, en remplissant soigneusement la fiche de renseignement et en validant chaque étape d'inscription. Ensuite vous recevrez un email de confirmation de votre inscription, nous nous efforcerons de traiter dans un bref délai votre abonnement.</p>
            </div>
           </div>
          </div>
         </div>
-       </div>
-      </div>
-     </div>
-    </div>
-    <div class="clearfix colelem" id="master-footer"><!-- group -->
-     <div class="gradient browser_width grpelem" id="u5281" style="margin-left: 0px; left: -18.5px; width: 1259px; margin-right: -1261px; "><!-- group -->
-      <div class="clearfix" id="u5281_align_to_page">
-       <div class="gradient rounded-corners clearfix grpelem" id="u6180"><!-- group -->
-        <div class="clearfix grpelem" id="pu5130-4"><!-- column -->
-         <div class="clearfix colelem" id="u5130-4"><!-- content -->
-          <p>Info l�gale</p>
-         </div>
-         <a class="nonblock nontext clearfix colelem" id="u5803-4" href="plan-du-site.html"><!-- content --><p>Plan du site</p></a>
-         <div class="clearfix colelem" id="u5804-4"><!-- content -->
-          <p>Termes et condition d'abonement</p>
-         </div>
-         <div class="clearfix colelem" id="u5859-4"><!-- content -->
-          <p>Menu</p>
-         </div>
-         <a class="nonblock nontext MuseLinkActive clearfix colelem" id="u1393-4" href="index.html"><!-- content --><p>Accueil </p></a>
-         <a class="nonblock nontext clearfix colelem" id="u1405-4" href="la-carte-illimit%c3%a9.html"><!-- content --><p>La carte illimit�</p></a>
-         <a class="nonblock nontext clearfix colelem" id="u1402-4" href="les-salles-pr%c3%a9senties.html"><!-- content --><p>Les salles pr�senties </p></a>
-         <a class="nonblock nontext clearfix colelem" id="u1403-4" href="abonnez-vous.html"><!-- content --><p>Abonnez vous</p></a>
-         <a class="nonblock nontext clearfix colelem" id="u1404-4" href="a-propos.html"><!-- content --><p>A propos </p></a>
-         <div class="clearfix colelem" id="u1327-4"><!-- content -->
-          <p>�Freedom Beats Illimit�. TOUT DROITS RESERV�S.2012.</p>
-         </div>
-        </div>
-        <div class="grpelem" id="u5831"><!-- simple frame --></div>
-        <div class="clearfix grpelem" id="pu5272-4"><!-- column -->
-         <div class="clearfix colelem" id="u5272-4"><!-- content -->
-          <p>Qui somme nous</p>
-         </div>
-         <div class="clearfix colelem" id="pu5854"><!-- group -->
-          <div class="grpelem" id="u5854"><!-- image -->
-           <img id="u5854_img" src="images/logo2100x72.png" alt="" width="100" height="72">
-          </div>
-          <div class="clearfix grpelem" id="u5274-4"><!-- content -->
-           <p>Freedom Beats est une soci�t� de cr�ation, de production et de&nbsp; diffusion de l�industrie de la musique cr��e pour lancer et d�velopper le mouvement artistique �ponyme. </p>
+        <div class="Container clearfix grpelem wp-panel" id="u3143" style="left: 0px; top: 229px; margin: 0px; position: absolute; "><!-- group -->
+         <div class="rounded-corners clearfix grpelem" id="u3381"><!-- group -->
+          <div class="clearfix grpelem" id="u3382-17"><!-- content -->
+           <p>Nous vous encourageons à télèchager le <span id="u3382-2">formulaire d'inscription</span>&nbsp;<span id="u3382-4">en format pdf, de le</span>&nbsp;<span id="u3382-6">remplir soigneusement puis nous le retouner à l'adresse ci-dessous avec le reglement de la premiére échéance.</span></p>
+           <p>&nbsp;</p>
+           <p>&nbsp;</p>
+           <p id="u3382-11">FREEDOM BEATS</p>
+           <p id="u3382-13">117 RUE ERETO</p>
+           <p id="u3382-15">75000 PARIS CEDEX</p>
           </div>
          </div>
-         <div class="clearfix colelem" id="u1386-4"><!-- content -->
-          <p><span id="u1386">Design by DISIDE STUDIO</span></p>
-         </div>
         </div>
-        <div class="grpelem" id="u5830"><!-- simple frame --></div>
-        <div class="clearfix grpelem" id="u5265-4"><!-- content -->
-         <p>Contacter Nous</p>
-        </div>
-       </div>
+       </div></div>
       </div>
-     </div>
-     <form class="form-grp clearfix grpelem" id="widgetu5146" method="post" enctype="multipart/form-data" onsubmit="alert('Ce formulaire HTML standard est configur� pour fonctionner avec Adobe&nbsp;Business&nbsp;Catalyst.'); return false;"><!-- group -->
-      <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu5147" data-required="true"><!-- group -->
-       <label class="fld-label actAsDiv clearfix grpelem" id="u5151-4" for="widgetu5147_input"><!-- content -->
-        <span class="actAsPara">Nom&nbsp;:</span>
-       </label>
-       <span class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem" id="u5148-4"><!-- content --><input class="wrapped-input" type="text" id="widgetu5147_input" name="FormFieldName" tabindex="1"><label class="wrapped-input fld-prompt" id="widgetu5147_prompt" for="widgetu5147_input"><span class="actAsPara">Votre nom</span></label></span>
-      </div>
-      <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu5239" data-required="true" data-type="email"><!-- group -->
-       <label class="fld-label actAsDiv clearfix grpelem" id="u5241-4" for="widgetu5239_input"><!-- content -->
-        <span class="actAsPara">Email&nbsp;:</span>
-       </label>
-       <span class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem" id="u5243-4"><!-- content --><input class="wrapped-input" type="text" id="widgetu5239_input" name="FormFieldName" tabindex="2"><label class="wrapped-input fld-prompt" id="widgetu5239_prompt" for="widgetu5239_input"><span class="actAsPara">nom@courrier �lectronique.com</span></label></span>
-      </div>
-      <div class="clearfix grpelem" id="u5188-4"><!-- content -->
-       <p>Envoi du formulaire...</p>
-      </div>
-      <div class="clearfix grpelem" id="u5202-4"><!-- content -->
-       <p>Le serveur a rencontr� une erreur.</p>
-      </div>
-      <div class="clearfix grpelem" id="u5213-4"><!-- content -->
-       <p>Formulaire re�u.</p>
-      </div>
-      <input class="submit-btn NoWrap grpelem" id="u5157-17" type="submit" value="" tabindex="4"><!-- state-based BG images -->
-      <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu5224" data-required="false"><!-- group -->
-       <label class="fld-label actAsDiv clearfix grpelem" id="u5226-4" for="widgetu5224_input"><!-- content -->
-        <span class="actAsPara">Message&nbsp;:</span>
-       </label>
-       <span class="fld-textarea actAsDiv rounded-corners clearfix grpelem" id="u5227-4"><!-- content --><textarea class="wrapped-input" id="widgetu5224_input" name="FormFieldName" tabindex="3"></textarea><label class="wrapped-input fld-prompt" id="widgetu5224_prompt" for="widgetu5224_input"><span class="actAsPara">Ajouter un message rapide...</span></label></span>
-      </div>
-     </form>
-     <div class="clearfix grpelem" id="u5276-11"><!-- content -->
-      <p>Freedom Beats axe principalement son travail sur la recherche et la promotion d�artistes du monde, ambassadeur d'une culture, d'une esth�tique.</p>
-      <p>Freedom Beats veut bousculer les codes et dogmes actuels du march� artistique et redonner en particulier � la Musique ses r�les essentiels de v�hicule de&nbsp; messages fondamentaux et de passerelle entre les cultures. </p>
-      <p>Freedom Beats propose de cr�er un nouveau rapport entre la Musique, les musiciens et le public. Il est temps de redonner au m�lomane la capacit� de redevenir acteur de la cha�ne de cr�ation, de production et de promotion. </p>
-      <p>C�est pour permettre aux m�lomanes de lib�rer leur passion pour la musique, que Freedom Beats a cr�e la carte FBI � Freedom Beats Illimit�, premi�re carte d�abonnement pour concerts live.</p>
-      <p>&nbsp;</p>
-     </div>
-    </div>
-   </div>
-  </div>
-  <div class="preload_images">
-   <img class="preload" src="images/bouton%20sondage22.png" alt="">
-   <img class="preload" src="images/bouton%20sondage23.png" alt="">
-   <img class="preload" src="images/bouton%20sondage24.png" alt="">
-   <img class="preload" src="images/facebook-u5899-r-fr.png" alt="">
-   <img class="preload" src="images/twitter-u5910-r-fr.png" alt="">
-   <img class="preload" src="images/u212-r-sprite.png" alt="">
-   <img class="preload" src="images/u212-m-sprite.png" alt="">
-   <img class="preload" src="images/u212-a-sprite.png" alt="">
-   <img class="preload" src="images/u6079-r-sprite.png" alt="">
-   <img class="preload" src="images/u6079-m-sprite.png" alt="">
-   <img class="preload" src="images/u6079-a-sprite.png" alt="">
-   <img class="preload" src="images/u6105-r-sprite.png" alt="">
-   <img class="preload" src="images/u6105-m-sprite.png" alt="">
-   <img class="preload" src="images/u6053-r-sprite.png" alt="">
-   <img class="preload" src="images/u6053-m-sprite.png" alt="">
-   <img class="preload" src="images/u6053-a-sprite.png" alt="">
-   <img class="preload" src="images/boutton2.png" alt="">
-   <img class="preload" src="images/boutton4.png" alt="">
-   <img class="preload" src="images/btn%20envoyer-u5157-17-r.png" alt="">
-   <img class="preload" src="images/btn%20envoyer-u5157-17-m.png" alt="">
-   <img class="preload" src="images/btn%20envoyer-u5157-17-fs.png" alt="">
-  </div>
+</div>
+
 {% endblock %}
