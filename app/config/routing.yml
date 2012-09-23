@@ -1,3 +1,23 @@
+freebeats_unlimitedcard:
+    resource: "@freebeatsUnlimitedcardBundle/Resources/config/routing.yml"
+    prefix:   /
+
+freebeats_contact:
+    resource: "@freebeatsContactBundle/Resources/config/routing.yml"
+    prefix:   /
+
+freebeats_about:
+    resource: "@freebeatsAboutBundle/Resources/config/routing.yml"
+    prefix:   /
+
+freebeats_showroom:
+    resource: "@freebeatsShowroomBundle/Resources/config/routing.yml"
+    prefix:   /
+
+freebeats_survey:
+    resource: "@freebeatsSurveyBundle/Resources/config/routing.yml"
+    prefix:   /
+
 freebeats_customer:
     resource: "@freebeatsCustomerBundle/Resources/config/routing.yml"
     prefix:   /
