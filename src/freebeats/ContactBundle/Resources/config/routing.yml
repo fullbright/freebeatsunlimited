@@ -1,0 +1,7 @@
+freebeats_contact_homepage:
+    pattern:  /contact
+    defaults: { _controller: freebeatsContactBundle:Default:index }
+
+freebeats_about_terms_conditions:
+    pattern:  /terms-and-conditions
+    defaults: { _controller: freebeatsContactBundle:Default:index }
