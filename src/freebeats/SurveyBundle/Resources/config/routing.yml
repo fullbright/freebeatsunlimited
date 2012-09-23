@@ -1,0 +1,3 @@
+freebeats_survey_homepage:
+    pattern:  /survey
+    defaults: { _controller: freebeatsSurveyBundle:Default:index }
