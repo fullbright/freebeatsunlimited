@@ -1323,6 +1323,7 @@ html
 	padding-bottom: 9px;
 	margin-right: -1024px;
 	margin-top: -1px;
+	margin-bottom: 20px;
 	left: 99px;
 }
 
@@ -1348,7 +1349,7 @@ html
 	z-index: 213;
 	width: 68px;
 	min-height: 11px;
-	margin-left: 119px;
+	margin-left: 116px;
 	margin-top: 31px;
 }
 
@@ -1498,9 +1499,9 @@ html
 #u1327-4
 {
 	z-index: 97;
-	width: 277px;
+	width: 1024px;
 	min-height: 15px;
-	margin-top: 49px;
+	margin-bottom: 10px;
 }
 
 #u5831
