@@ -1,3 +1,7 @@
 freebeats_home_homepage:
-    pattern:  /hello/{name}
+    pattern:  /home
     defaults: { _controller: freebeatsHomeBundle:Default:index }
+
+freebeats_home_sitemap:
+    pattern:  /sitemap
+    defaults: { _controller: freebeatsHomeBundle:Default:sitemap }
