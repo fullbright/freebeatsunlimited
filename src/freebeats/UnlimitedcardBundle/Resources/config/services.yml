@@ -1,0 +1,7 @@
+parameters:
+#    freebeats_unlimitedcard.example.class: freebeats\UnlimitedcardBundle\Example
+
+services:
+#    freebeats_unlimitedcard.example:
+#        class: %freebeats_unlimitedcard.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

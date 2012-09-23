@@ -1,0 +1,3 @@
+freebeats_unlimitedcard_homepage:
+    pattern:  /unlimitedcard
+    defaults: { _controller: freebeatsUnlimitedcardBundle:Default:index }
