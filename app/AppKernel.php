@@ -24,12 +24,11 @@ class AppKernel extends Kernel
             new freebeats\SurveyBundle\freebeatsSurveyBundle(),
             new freebeats\ShowroomBundle\freebeatsShowroomBundle(),
             new freebeats\AboutBundle\freebeatsAboutBundle(),
-            new freebeats\ContactBundle\freebeatsContactBundle(),
             new freebeats\UnlimitedcardBundle\freebeatsUnlimitedcardBundle(),
+        	//new JMS\Payment\CoreBundle\JMSPaymentCoreBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
-            $bundles[] = new Acme\DemoBundle\AcmeDemoBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
