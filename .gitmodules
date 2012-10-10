@@ -1,0 +1,3 @@
+[submodule "vendor/bundles/Sf2gen/Bundle/ConsoleBundle"]
+	path = vendor/bundles/Sf2gen/Bundle/ConsoleBundle
+	url = git://github.com/RapotOR/ConsoleBundle.git
