@@ -522,3 +522,11 @@
      </div>
 
 {% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+ 	  <!-- page dedicated scripts -->
+	  <script type="text/javascript">
+		  Muse.Utils.addSelectorFn('#pamphletu3865', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'stack',event:'click',deactivationEvent:'',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false}); });/* #pamphletu3865 */		   		
+	  </script>
+{% endblock %}

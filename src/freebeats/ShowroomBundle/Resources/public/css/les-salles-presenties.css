@@ -1,6 +1,6 @@
 html
 {
-	background: #F4F4F4 url("../images/brillant_%402x.png") repeat center center scroll;
+	background: #F4F4F4 url("../images/brillant-2x.png") repeat center center scroll;
 }
 
 #page
@@ -23,7 +23,7 @@ html
 	border-radius: 10px 10px 0px 0px ;
 	margin-left: auto;
 	margin-right: auto;
-	background: transparent url("../images/brillant_%402x.png") repeat center center;
+	background: transparent url("../images/brillant-2x.png") repeat center center;
 }
 
 #page_position_content
@@ -711,8 +711,9 @@ html
 	width: 0.01px;
 	position: relative;
 	margin-right: -1px;
-	margin-top: 188px;
-	left: 103px;
+	height: 953px;
+	/*margin-top: 188px;
+	left: 103px;*/
 }
 
 #pamphletu3865
