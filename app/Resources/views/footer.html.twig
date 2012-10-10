@@ -55,7 +55,23 @@
          <p>Contactez-nous</p>
         </div>
         <div class="clearfix colelem" id="u1327-4"><!-- content -->
-          <p>(c) Freedom Beats Illimité. TOUT DROITS RESERVES 2012 - Design by DISIDE STUDIO</p>
+          <p>
+          	(c) Freedom Beats Illimité. TOUT DROITS RESERVES 2012 - Design by DISIDE STUDIO
+          	<script type="text/javascript">
+			
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-35396030-1']);
+			  _gaq.push(['_setDomainName', 'freedombeats.com']);
+			  _gaq.push(['_trackPageview']);
+			
+			  (function() {
+			    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+			
+			</script>
+          </p>
          </div>
        </div>
       </div>
@@ -63,42 +79,7 @@
      
      
      <!-- CONTACT FORM -->
-     <form class="form-grp clearfix grpelem" id="widgetu5146" method="post" enctype="multipart/form-data" onsubmit="alert('Ce formulaire HTML standard est configur� pour fonctionner avec Adobe&nbsp;Business&nbsp;Catalyst.'); return false;"><!-- group -->
-      <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu5147" data-required="true"><!-- group -->
-       <label class="fld-label actAsDiv clearfix grpelem" id="u5151-4" for="widgetu5147_input"><!-- content -->
-        <span class="actAsPara">Nom&nbsp;:</span>
-       </label>
-       <span class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem" id="u5148-4"><!-- content --><input class="wrapped-input" type="text" id="widgetu5147_input" name="FormFieldName" tabindex="1"><label class="wrapped-input fld-prompt" id="widgetu5147_prompt" for="widgetu5147_input"><span class="actAsPara">Votre nom</span></label></span>
-      </div>
-      <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu5239" data-required="true" data-type="email"><!-- group -->
-       <label class="fld-label actAsDiv clearfix grpelem" id="u5241-4" for="widgetu5239_input"><!-- content -->
-        <span class="actAsPara">Email&nbsp;:</span>
-       </label>
-       <span class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem" id="u5243-4"><!-- content --><input class="wrapped-input" type="text" id="widgetu5239_input" name="FormFieldName" tabindex="2"><label class="wrapped-input fld-prompt" id="widgetu5239_prompt" for="widgetu5239_input"><span class="actAsPara">nom@courrier_electronique.com</span></label></span>
-      </div>
-      <div class="clearfix grpelem" id="u5188-4"><!-- content -->
-       <p>Envoi du formulaire...</p>
-      </div>
-      <div class="clearfix grpelem" id="u5202-4"><!-- content -->
-       <p>Le serveur a rencontré une erreur.</p>
-      </div>
-      <div class="clearfix grpelem" id="u5213-4"><!-- content -->
-       <p>Formulaire reçu.</p>
-      </div>
-      <input class="submit-btn NoWrap grpelem" id="u5157-17" type="submit" value="" tabindex="4"><!-- state-based BG images -->
-      <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu5224" data-required="false"><!-- group -->
-       <label class="fld-label actAsDiv clearfix grpelem" id="u5226-4" for="widgetu5224_input"><!-- content -->
-        <span class="actAsPara">Message :</span>
-       </label>
-       
-       <span class="fld-textarea actAsDiv rounded-corners clearfix grpelem" id="u5227-4"><!-- content -->
-       	<textarea class="wrapped-input" id="widgetu5224_input" name="FormFieldName" tabindex="3"></textarea>
-       	<label class="wrapped-input fld-prompt" id="widgetu5224_prompt" for="widgetu5224_input">
-       		<span class="actAsPara">Ajouter un message rapide...</span>
-       	</label>       	
-       </span>
-      </div>
-     </form>
+     {% render "freebeatsHomeBundle:Default:contactUs" %}
      
      <div class="clearfix grpelem" id="u5276-11"><!-- content -->
       <p>
