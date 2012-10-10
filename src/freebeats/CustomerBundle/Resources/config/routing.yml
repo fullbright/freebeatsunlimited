@@ -9,6 +9,14 @@ freebeats_subscribe_homepage:
 freebeats_customer_create:
     pattern:  /customer/create
     defaults: { _controller: freebeatsCustomerBundle:Default:create }
+
+freebeats_customer_pay:
+    pattern:  /customer/pay
+    defaults: { _controller: freebeatsCustomerBundle:Default:pay }
+    
+freebeats_customer_success:
+    pattern:  /customer/success
+    defaults: { _controller: freebeatsCustomerBundle:Default:createSuccess }
     
 freebeats_customer_details:
     pattern:  /customer/show/{id}

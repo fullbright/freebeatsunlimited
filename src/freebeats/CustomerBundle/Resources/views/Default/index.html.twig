@@ -73,3 +73,14 @@
 </div>
 
 {% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+ 	  <!-- page dedicated scripts -->
+	  <script type="text/javascript">
+	  Muse.Utils.addSelectorFn('#widgetu4903', function(elem) { new WebPro.Widget.Form(elem, {validationEvent:'submit',errorStateSensitivity:'high',fieldWrapperClass:'fld-grp',formSubmittedClass:'frm-sub-st',formErrorClass:'frm-subm-err-st',formDeliveredClass:'frm-subm-ok-st',notEmptyClass:'non-empty-st',focusClass:'focus-st',invalidClass:'fld-err-st',requiredClass:'fld-err-st',ajaxSubmit:false}); });/* #widgetu4903 */
+	  //Muse.Utils.addSelectorFn('#pamphletu4644', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'lightbox',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:1000,hideAllContentsFirst:false,shuffle:false}); });/* #pamphletu4644 */
+	  Muse.Utils.addSelectorFn('#pamphletu3135', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'stack',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'vertical',transitionDuration:500,hideAllContentsFirst:false,shuffle:false}); });/* #pamphletu3135 */
+    		   		
+	  </script>
+{% endblock %}

@@ -6,109 +6,78 @@
 {% endblock %}
 
 {% block content %}
-<div id="customerformarea">
-	<div class="PamphletWidget clearfix grpelem" id="pamphletu3135">
-		<form  >
-		    {{ form_widget(form) }}
-		    
-		</form>
-	</div>
-</div>
-
-
-	<div class="Container rounded-corners clearfix grpelem wp-panel wp-panel-active" id="u4664" style="left: 0px; top: 0px; position: absolute; "><!-- group -->
-              <form class="form-grp clearfix grpelem" id="widgetu4903" action="{{ path('freebeats_customer_create') }}" method="post" {{ form_enctype(form) }} enctype="multipart/form-data" onsubmit=""><!-- group -->
-               <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu5002" data-required="true"><!-- group -->
-                <label class="fld-label actAsDiv clearfix grpelem" id="u5006-4" for="widgetu5002_input"><!-- content -->
-                 <span class="actAsPara">Nom&nbsp;:</span>
-                </label>
-                <div class="fld-input NoWrap clearfix grpelem" id="pu5003-4"><!-- group -->
-                 <span class="actAsDiv grpelem" id="u5003-4"><!-- content --><span class="actAsDiv _u5003-4 f3s_top"></span><span class="actAsDiv _u5003-4 f3s_mid clearfix"><span class="actAsDiv position_content clearfix" id="u5003-4position_content"><input class="wrapped-input" type="text" id="widgetu5002_input" name="FormFieldName" tabindex="1"><label class="wrapped-input fld-prompt" id="widgetu5002_prompt" for="widgetu5002_input"><span class="actAsPara">Entrez votre nom</span></label></span><span class="actAsDiv position_content clearfix" id="u5003-4position_content"></span><span class="actAsDiv position_content clearfix" id="u5003-4position_content"></span><span class="actAsDiv position_content clearfix" id="u5003-4position_content"></span><span class="actAsDiv position_content clearfix" id="u5003-4position_content"></span></span><span class="actAsDiv _u5003-4 f3s_bot"></span></span>
-                </div>
-                <div class="clearfix grpelem" id="u5005-4"><!-- content -->
-                 <p>Obligatoire</p>
-                </div>
+	<div class="Container rounded-corners clearfix grpelem wp-panel wp-panel-active" id="u4664"><!-- group -->
+              <form class="form-grp clearfix grpelem" id="widgetu4903" action="{{ path('freebeats_customer_create') }}" method="post" {{ form_enctype(form) }} ><!-- group -->
+               	<div class="fld-grp rounded-corners clearfix grpelem" id="widgetu5002"><!-- group -->
+                		{{ form_label(form.firstname, "Prénom : ", { 'attr': {'class' : 'wrapped-input contact-label' } }) }}
+	                <div class="fld-input NoWrap clearfix grpelem" id="pu5003-4"><!-- group -->
+	                 	{{ form_widget(form.firstname, { 'attr': {'class' : 'wrapped-input contact-input'} }) }}
+	                 </div>
+	                 <div>
+		       		 	{{ form_errors(form.firstname) }}
+	                </div>
                </div>
-               <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu4904" data-required="true" data-type="email"><!-- group -->
-                <label class="fld-label actAsDiv clearfix grpelem" id="u4907-4" for="widgetu4904_input"><!-- content -->
-                 <span class="actAsPara">Votre Email&nbsp;:</span>
-                </label>
-                <div class="fld-input NoWrap clearfix grpelem" id="pu4906-4"><!-- group -->
-                 <span class="actAsDiv grpelem" id="u4906-4"><!-- content -->
-                 <span class="actAsDiv _u4906-4 f3s_top"></span>
-                 <span class="actAsDiv _u4906-4 f3s_mid clearfix">
-                 	<span class="actAsDiv position_content clearfix" id="u4906-4position_content">
-                 		<input class="wrapped-input" type="text" id="widgetu4904_input" name="FormFieldName" tabindex="7"><label class="wrapped-input fld-prompt" id="widgetu4904_prompt" for="widgetu4904_input"><span class="actAsPara">nom@courrier électronique.com</span></label></span><span class="actAsDiv position_content clearfix" id="u4906-4position_content"></span><span class="actAsDiv position_content clearfix" id="u4906-4position_content"></span><span class="actAsDiv position_content clearfix" id="u4906-4position_content"></span><span class="actAsDiv position_content clearfix" id="u4906-4position_content"></span></span><span class="actAsDiv _u4906-4 f3s_bot"></span></span>
-                </div>
-                <div class="clearfix grpelem" id="u4905-4"><!-- content -->
-                 <p>Obligatoire</p>
-                </div>
+                <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu5015"><!-- group -->
+	                	{{ form_label(form.lastname, "Nom : ", { 'attr': {'class' : 'wrapped-input contact-label' } }) }}
+	                <div class="fld-input NoWrap clearfix grpelem" id="pu5017-4"><!-- group -->
+	                 	{{ form_widget(form.lastname, { 'attr': {'class' : 'wrapped-input contact-input'} }) }}
+	                 </div>
+	                 <div>
+		       		 	{{ form_errors(form.lastname) }}
+	                </div>
                </div>
-               <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu4910" data-required="false"><!-- group -->
-                <label class="fld-label actAsDiv clearfix grpelem" id="u4914-4" for="widgetu4910_input"><!-- content -->
-                 <span class="actAsPara">Tél :</span>
-                </label>
-                <div class="fld-input NoWrap clearfix grpelem" id="pu4911-4"><!-- group -->
-                 <span class="actAsDiv grpelem" id="u4911-4"><!-- content --><span class="actAsDiv _u4911-4 f3s_top"></span><span class="actAsDiv _u4911-4 f3s_mid clearfix"><span class="actAsDiv position_content clearfix" id="u4911-4position_content"><input class="wrapped-input" type="text" id="widgetu4910_input" name="FormFieldName" tabindex="6"><label class="wrapped-input fld-prompt" id="widgetu4910_prompt" for="widgetu4910_input"><span class="actAsPara">Entrez un numéro de téléphone</span></label></span><span class="actAsDiv position_content clearfix" id="u4911-4position_content"></span><span class="actAsDiv position_content clearfix" id="u4911-4position_content"></span><span class="actAsDiv position_content clearfix" id="u4911-4position_content"></span><span class="actAsDiv position_content clearfix" id="u4911-4position_content"></span></span><span class="actAsDiv _u4911-4 f3s_bot"></span></span>
-                </div>
+               <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu4958"><!-- group -->
+	                 	{{ form_label(form.address, "Adresse : ", { 'attr': {'class' : 'wrapped-input contact-label' } }) }}
+	                 <div class="fld-input NoWrap clearfix grpelem" id="pu4960-4"><!-- group -->
+	                  	{{ form_widget(form.address, { 'attr': {'class' : 'wrapped-input contact-input'} }) }}
+	                  </div>
+	                  <div>
+		       		  	{{ form_errors(form.address) }}
+	                 </div>
                </div>
-               <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu4958" data-required="true"><!-- group -->
-                <label class="fld-label actAsDiv clearfix grpelem" id="u4961-4" for="widgetu4958_input"><!-- content -->
-                 <span class="actAsPara">Adresse :</span>
-                </label>
-                <div class="fld-input NoWrap clearfix grpelem" id="pu4960-4"><!-- group -->
-                 <span class="actAsDiv grpelem" id="u4960-4"><!-- content --><span class="actAsDiv _u4960-4 f3s_top"></span><span class="actAsDiv _u4960-4 f3s_mid clearfix"><span class="actAsDiv position_content clearfix" id="u4960-4position_content"><input class="wrapped-input" type="text" id="widgetu4958_input" name="FormFieldName" tabindex="3"><label class="wrapped-input fld-prompt" id="widgetu4958_prompt" for="widgetu4958_input"><span class="actAsPara">Entrez votre adresse</span></label></span><span class="actAsDiv position_content clearfix" id="u4960-4position_content"></span><span class="actAsDiv position_content clearfix" id="u4960-4position_content"></span><span class="actAsDiv position_content clearfix" id="u4960-4position_content"></span><span class="actAsDiv position_content clearfix" id="u4960-4position_content"></span></span><span class="actAsDiv _u4960-4 f3s_bot"></span></span>
-                </div>
+               <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu4952"><!-- group -->
+	                	{{ form_label(form.city, "Ville, Pays : ", { 'attr': {'class' : 'wrapped-input contact-label' } }) }}
+	                <div class="fld-input NoWrap clearfix grpelem" id="pu4955-4"><!-- group -->
+	                 	{{ form_widget(form.city, { 'attr': {'class' : 'wrapped-input contact-input'} }) }}
+	                 </div>
+	                 <div>
+		       		 	{{ form_errors(form.city) }}
+	                </div>
                </div>
-               <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu4952" data-required="true"><!-- group -->
-                <label class="fld-label actAsDiv clearfix grpelem" id="u4954-4" for="widgetu4952_input"><!-- content -->
-                 <span class="actAsPara">Ville&nbsp;:</span>
-                </label>
-                <div class="fld-input NoWrap clearfix grpelem" id="pu4955-4"><!-- group -->
-                 <span class="actAsDiv grpelem" id="u4955-4"><!-- content --><span class="actAsDiv _u4955-4 f3s_top"></span><span class="actAsDiv _u4955-4 f3s_mid clearfix"><span class="actAsDiv position_content clearfix" id="u4955-4position_content"><input class="wrapped-input" type="text" id="widgetu4952_input" name="FormFieldName" tabindex="4"><label class="wrapped-input fld-prompt" id="widgetu4952_prompt" for="widgetu4952_input"><span class="actAsPara">Entrez une ville</span></label></span><span class="actAsDiv position_content clearfix" id="u4955-4position_content"></span><span class="actAsDiv position_content clearfix" id="u4955-4position_content"></span><span class="actAsDiv position_content clearfix" id="u4955-4position_content"></span><span class="actAsDiv position_content clearfix" id="u4955-4position_content"></span></span><span class="actAsDiv _u4955-4 f3s_bot"></span></span>
-                </div>
+               <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu4997"><!-- group -->
+	                	{{ form_label(form.postalcode, "Code postal : ", { 'attr': {'class' : 'wrapped-input contact-label' } }) }}
+	                <div class="fld-input NoWrap clearfix grpelem" id="pu5000-4"><!-- group -->
+	                 	{{ form_widget(form.postalcode, { 'attr': {'class' : 'wrapped-input contact-input'} }) }}
+	                 </div>
+	                 <div>
+		       		 	{{ form_errors(form.postalcode) }}
+	                </div>
                </div>
-               <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu4997" data-required="true"><!-- group -->
-                <label class="fld-label actAsDiv clearfix grpelem" id="u4999-4" for="widgetu4997_input"><!-- content -->
-                 <span class="actAsPara">Code postal&nbsp;:</span>
-                </label>
-                <div class="fld-input NoWrap clearfix grpelem" id="pu5000-4"><!-- group -->
-                 <span class="actAsDiv grpelem" id="u5000-4"><!-- content --><span class="actAsDiv _u5000-4 f3s_top"></span><span class="actAsDiv _u5000-4 f3s_mid clearfix"><span class="actAsDiv position_content clearfix" id="u5000-4position_content"><input class="wrapped-input" type="text" id="widgetu4997_input" name="FormFieldName" tabindex="5"><label class="wrapped-input fld-prompt" id="widgetu4997_prompt" for="widgetu4997_input"><span class="actAsPara">Entrez un code postal</span></label></span><span class="actAsDiv position_content clearfix" id="u5000-4position_content"></span><span class="actAsDiv position_content clearfix" id="u5000-4position_content"></span><span class="actAsDiv position_content clearfix" id="u5000-4position_content"></span><span class="actAsDiv position_content clearfix" id="u5000-4position_content"></span></span><span class="actAsDiv _u5000-4 f3s_bot"></span></span>
-                </div>
+               <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu4910"><!-- group -->
+	                	{{ form_label(form.phonenumber, "Téléphone : ", { 'attr': {'class' : 'wrapped-input contact-label' } }) }}
+	                <div class="fld-input NoWrap clearfix grpelem" id="pu4911-4"><!-- group -->
+	                 	{{ form_widget(form.phonenumber, { 'attr': {'class' : 'wrapped-input contact-input'} }) }}
+	                 </div>
+	                 <div>
+		       		 	{{ form_errors(form.phonenumber) }}
+	                </div>
                </div>
-               <div class="clearfix grpelem" id="u4916-4"><!-- content -->
-                <p>Envoi du formulaire...</p>
+               <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu4904" data-type="email"><!-- group -->
+	                	{{ form_label(form.email, "Votre email : ", { 'attr': {'class' : 'wrapped-input contact-label' } }) }}
+	                <div class="fld-input NoWrap clearfix grpelem" id="pu4906-4"><!-- group -->
+	                 	{{ form_widget(form.email, { 'attr': {'class' : 'wrapped-input contact-input'} }) }}</div>
+	                 <div>
+		       		 	{{ form_errors(form.email) }}
+		       		</div>
                </div>
-               <div class="clearfix grpelem" id="u4915-4"><!-- content -->
-                <p>Le serveur a rencontré une erreur.</p>
-               </div>
-               <div class="clearfix grpelem" id="u4957-4"><!-- content -->
-                <p>Formulaire reçu.</p>
-               </div>
-               <input class="submit-btn NoWrap grpelem" id="u4909-17" type="submit" value="" tabindex="8"><!-- state-based BG images -->
-               <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu5015" data-required="true"><!-- group -->
-                <label class="fld-label actAsDiv clearfix grpelem" id="u5018-4" for="widgetu5015_input"><!-- content -->
-                 <span class="actAsPara">Prénom&nbsp;:</span>
-                </label>
-                <div class="fld-input NoWrap clearfix grpelem" id="pu5017-4"><!-- group -->
-                 <span class="actAsDiv grpelem" id="u5017-4"><!-- content -->
-                 	<span class="actAsDiv _u5017-4 f3s_top"></span>
-                 	<span class="actAsDiv _u5017-4 f3s_mid clearfix">
-                 	<span class="actAsDiv position_content clearfix" id="u5017-4position_content">
-                 	<input class="wrapped-input" type="text" id="widgetu5015_input" name="FormFieldName" tabindex="2">
-                 	<label class="wrapped-input fld-prompt" id="widgetu5015_prompt" for="widgetu5015_input">
-                 		<span class="actAsPara">Entrez votre prénom</span>
-                 	</label>
-                 	</span>
-                 	<span class="actAsDiv position_content clearfix" id="u5017-4position_content"></span>
-                 	<span class="actAsDiv position_content clearfix" id="u5017-4position_content"></span>
-                 	<span class="actAsDiv position_content clearfix" id="u5017-4position_content"></span>
-                 	<span class="actAsDiv position_content clearfix" id="u5017-4position_content"></span>
-                 	</span>
-                 	<span class="actAsDiv _u5017-4 f3s_bot"></span>
-                 	</span>
-                </div>
-               </div>
+               
+               <div>
+		       		{{ form_errors(form) }}
+		       		{{ form_rest(form) }}       
+		       </div>
+               
+               <input class="submit-btn NoWrap grpelem" id="u4909-17" type="submit" value=""><!-- state-based BG images -->
+               
               </form>
               <div class="grpelem" id="u5279-4"><!-- rasterized frame -->
                <img id="u5279-4_img" src="{{ asset('bundles/freebeatscustomer/images/u5279-4.png') }}" alt="FORMULAIRE D'INSCRIPTION" width="261" height="15">

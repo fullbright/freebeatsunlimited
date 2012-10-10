@@ -2,6 +2,8 @@
 
 namespace freebeats\CustomerBundle\Controller;
 
+use Symfony\Component\HttpFoundation\Request;
+
 use Symfony\Component\HttpFoundation\Response;
 use freebeats\CustomerBundle\Entity\Customer;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -14,28 +16,63 @@ class DefaultController extends Controller
         return $this->render('freebeatsCustomerBundle:Default:index.html.twig');
     }
     
-    public function createAction()
+    public function createAction(Request $request)
     {
+    	$logger = $this->get('logger');
+    	$logger->info('We just got the logger');
+    	
     	$customer = new Customer();
-    	$customer->setFirstName("Sergio");
-    	$customer->setLastName("AFANOU");
-    	$customer->setAddress("10 rue Jules David");
-    	$customer->setPostalCode("93260");
-    	$customer->setCity("Les lilas");
-    	$customer->setCountry("France");
-    	$customer->setEmail("sergio@example.com");
+    	$customer->setFirstName("");
+    	$customer->setLastName("");
+    	$customer->setAddress("");
+    	$customer->setPhoneNumber("");
+    	$customer->setPostalCode("");
+    	$customer->setCity("");
+    	$customer->setEmail("");
     	
-    	$em = $this->getDoctrine()->getEntityManager();
-    	$em->persist($customer);
-    	$em->flush();
-    	
+
     	$form = $this->createFormBuilder($customer)
     	->add('firstname', 'text')
     	->add('lastname', 'text')
+    	->add('address', 'text')
+    	->add('postalcode', 'text')
+    	->add('city', 'text')
+    	->add('email', 'text')
+    	->add('phonenumber', 'text')
     	->getForm();
+    	
+    	if($request->getMethod() == 'POST')
+    	{
+    		$form->bind($request);
+    		
+    		$form->getErrors();
+    		
+    		$logger->info('Form errors : '.$form->getErrors());
+    		$logger->info('Form is valid ?'.$form->isValid());
+    		
+    		if($form->isValid())
+    		{
+		    	$em = $this->getDoctrine()->getEntityManager();
+		    	$em->persist($customer);
+		    	$em->flush();
+		    	return $this->redirect($this->generateUrl('freebeats_customer_pay'));
+    		}
+    	}
+    	
     	return $this->render('freebeatsCustomerBundle:Default:createcustomer.html.twig', 
     			array('form' => $form->createView(),)
     	);
+    }
+    
+    public function payAction()
+    {
+    	//redirect to paypal
+    	return $this->render('freebeatsCustomerBundle:Default:createcustomer.success.html.twig');
+    }
+    
+    public function createSuccessAction()
+    {
+    	return $this->render('freebeatsCustomerBundle:Default:createcustomer.success.html.twig');
     }
     
     public function showAction($id)

@@ -718,8 +718,8 @@ html
 	filter: alpha(opacity=42);
 	position: relative;
 	margin-right: -887px;
-	margin-top: 239px;
-	left: 118px;
+	/*margin-top: 239px;
+	left: 118px;*/
 }
 
 #pamphletu3135
@@ -729,8 +729,8 @@ html
 	height: 255px;
 	position: relative;
 	margin-right: -1px;
-	margin-top: 286px;
-	left: 118px;
+	margin-top: 60px;
+	/*left: 118px;*/
 }
 
 #u3163
@@ -1055,18 +1055,47 @@ html
 {
 	z-index: 258;
 	width: 506px;
-	height: 842px;
+	/*height: 842px;*/
 	border-style: none;
 	border-color: transparent;
 	-moz-border-radius: 17px;
 	-webkit-border-radius: 17px;
 	-khtml-border-radius: 17px;
 	border-radius: 17px;
-	margin-right: -506px;
-	position: relative;
+	/*margin-right: -506px;*/
+	margin-left: 155px;
+	/*position: relative;
 	top: 22px;
-	left: 22px;
+	left: 22px;*/
 	background: #FFFFFF url("../images/low_contrast_linen_%402x.png") repeat center center;
+}
+
+#u4664 label
+{
+	z-index: 382;
+	width: 200px;
+	min-height: 20px;
+	background-color: transparent;
+	line-height: 1;
+	text-align: left;
+	color: white;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+	position: relative;
+	margin-right: -200px;
+}
+
+#u4664 input.wrapped-input
+{
+	width: 328px;
+	color: #C4C4C4;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+	font-style: italic;
+	background-color: white;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #C4C4C4;
 }
 
 #widgetu4903
@@ -2345,7 +2374,7 @@ html
 
 #u4909-17:hover
 {
-	background: url("../images/u4909-17-r.png") no-repeat 0px 0px;
+	background: url("../images/u4909-17.png") no-repeat 0px 0px;
 }
 
 #u4909-17:active

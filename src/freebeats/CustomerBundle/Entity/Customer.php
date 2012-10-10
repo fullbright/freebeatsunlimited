@@ -26,6 +26,12 @@ class Customer
 	 */
 	protected $lastName;
 	
+
+	/**
+	 * @ORM\Column(type="string", length=100)
+	 */
+	protected $phoneNumber;
+	
 	/**
 	 * @ORM\Column(type="string", length=255)
 	 */
@@ -45,11 +51,6 @@ class Customer
 	 * @ORM\Column(type="string", length=100)
 	 */
 	protected $city;
-	
-	/**
-	 * @ORM\Column(type="string", length=100)
-	 */
-	protected $country;
 
     /**
      * Get id
@@ -200,25 +201,25 @@ class Customer
     }
 
     /**
-     * Set country
+     * Set phoneNumber
      *
-     * @param string $country
+     * @param string $phoneNumber
      * @return Customer
      */
-    public function setCountry($country)
+    public function setPhoneNumber($phoneNumber)
     {
-        $this->country = $country;
+        $this->phoneNumber = $phoneNumber;
     
         return $this;
     }
 
     /**
-     * Get country
+     * Get phoneNumber
      *
      * @return string 
      */
-    public function getCountry()
+    public function getPhoneNumber()
     {
-        return $this->country;
+        return $this->phoneNumber;
     }
 }
