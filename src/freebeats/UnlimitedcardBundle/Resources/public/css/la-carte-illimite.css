@@ -1,6 +1,6 @@
 html
 {
-	background: #F4F4F4 url("../images/brillant_%402x.png") repeat center center scroll;
+	background: #F4F4F4 url("../images/brillant-2x.png") repeat center center scroll;
 }
 
 #page
@@ -21,7 +21,7 @@ html
 	border-radius: 10px 10px 0px 0px ;
 	margin-left: auto;
 	margin-right: auto;
-	background: transparent url("../images/brillant_%402x.png") repeat center center;
+	background: transparent url("../images/brillant-2x.png") repeat center center;
 }
 
 #page_position_content
@@ -84,6 +84,14 @@ html
 	margin-right: -1px;
 	margin-top: 14px;
 	left: 997px;
+}
+
+
+#pu5798
+{
+	width: 0.01px;
+	margin-top: 135px;
+	position: relative;
 }
 
 #u1321
@@ -709,8 +717,8 @@ html
 	width: 0.01px;
 	position: relative;
 	margin-right: -1px;
-	margin-top: 192px;
-	left: 96px;
+	/*margin-top: 192px;
+	left: 96px;*/
 }
 
 #pu3391
@@ -1054,7 +1062,7 @@ html
 {
 	height: 30px;
 	min-height: 30px;
-	background-image: url("../images/u3427-a-full.png");
+	background-image: url("../images/u3435-a-full.png");
 	background-position: left top;
 	width: 170px;
 	padding-bottom: 12px;
