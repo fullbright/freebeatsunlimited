@@ -1,0 +1,6 @@
+freebeats\SurveyBundle\Entity\Survey:
+  properties:
+    choice1:
+        - NotBlank: ~
+    choice2:
+        - NotBlank: ~

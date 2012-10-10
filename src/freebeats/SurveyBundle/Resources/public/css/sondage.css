@@ -1,0 +1,70 @@
+
+#pu2036_position_content
+{
+	z-index: 292;
+}
+
+.survey-form
+{
+	clear: both;
+}
+
+.survey-input
+{
+	box-sizing: border-box;
+	-webkit-box-align: center;
+	text-align: center;
+}
+
+.survey-label
+{
+	cursor: default;
+}
+
+.survey-border div
+{
+	text-align: center;
+}
+
+.survey-border
+{
+	position: relative;
+	border: 1px solid gray;
+	padding: 30px;
+	width: 683px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	height: 423px;
+}
+
+.survey-submit
+{
+	margin-left: 68px;
+}
+
+.lt-select 
+{
+	width: 150px;
+	border: 1px solid #AAA;
+	padding: 5px 5px 5px 3px;
+	border-radius: 4px;
+	background: #FAFAFA;
+	outline: none;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+#u2059-4 {
+	font-size: 18px;
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+#u6176-4
+{
+	margin-bottom: 100px;
+	text-align: center;
+}

@@ -1,0 +1,46 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/freebeatssurvey/css/sondage.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+
+<div class="survey-border">
+        <div class="" id="pu2059-4"><!-- column -->
+	         <div class="" id="u2059-4"><!-- content -->
+	         	QUELLES SONT VOS GENRES DE MUSIQUE PRÉFERÉES
+	         </div>
+	         <div class="" id="u6176-4"><!-- content -->
+	         	Choisissez parmis la liste
+	         </div>
+	         <div class="survey-form" id="u6172"><!-- custom html -->						   
+					<form action="{{ path('freebeats_survey_new') }}" method="post" {{ form_enctype(form) }}>
+				       <div class="lt-select-wrapper">
+					       {{ form_label(form.choice1, "CHOIX 1 : ", { 'attr': {'class' : 'survey-label' } }) }}
+				           {{ form_widget(form.choice1, { 'attr': {'class' : 'lt-select survey-input'} }) }}
+					       {{ form_errors(form.choice1) }}
+				       </div>
+				       <div class="lt-select-wrapper">
+					       {{ form_label(form.choice2, "CHOIX 2 : ", { 'attr': {'class' : 'survey-label' } }) }}
+				           {{ form_widget(form.choice2, { 'attr': {'class' : 'lt-select survey-input'} }) }}
+					       {{ form_errors(form.choice2) }}
+				       </div>
+				      <div class="button">
+				      	<input type="submit" class="survey-submit lt-select" value="Envoyer">
+				      </div>
+				      <p>
+				       		{{ form_errors(form) }}
+				       		{{ form_rest(form) }}       
+				      </p>			 
+					</form>
+			</div>
+        </div>
+</div>
+<!-- <form action="{{ path('freebeats_survey_new') }}" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+    <input type="submit" />
+</form> -->
+
+{% endblock %}

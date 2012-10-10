@@ -1,0 +1,30 @@
+<?php
+
+namespace freebeats\SurveyBundle\Entity;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="survey")
+ * @author sergio
+ */
+class Survey 
+{
+	/**
+	 * @ORM\Id
+	 * @ORM\Column(type="integer")
+	 * @ORM\GeneratedValue(strategy="AUTO")
+	 */
+	protected $id;
+	
+	/**
+	 * @ORM\Column(type="string", length=100)
+	 */
+	protected $choice1;
+	
+	/**
+	 * @ORM\Column(type="string", length=100)
+	 */
+	protected $choice2;
+	
+}
