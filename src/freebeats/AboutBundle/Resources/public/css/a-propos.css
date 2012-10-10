@@ -35,8 +35,11 @@ html
 	width: 0.01px;
 	position: relative;
 	margin-right: -1px;
-	margin-top: 331px;
-	left: 296px;
+	/*margin-top: 331px;
+	left: 296px;*/
+	margin-top: 135px;
+	left: 162px;
+	text-align: justify;
 }
 
 #pu5897_position_content
@@ -795,8 +798,8 @@ html
 	width: 227px;
 	position: relative;
 	margin-right: -227px;
-	margin-top: 170px;
-	left: 419px;
+	/*margin-top: 170px;*/
+	left: 288px;
 }
 
 #u5894_img
