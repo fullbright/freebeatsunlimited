@@ -913,8 +913,8 @@ html
 	z-index: 105;
 	width: 40px;
 	min-height: 8px;
-	margin-left: 116px;
-	margin-top: 12px;
+	/*margin-left: 116px;
+	margin-top: 12px;*/
 }
 
 #u1393-4:hover
@@ -922,7 +922,7 @@ html
 	padding-top: 0px;
 	padding-bottom: 0px;
 	min-height: 8px;
-	margin: 12px 0px 0px 116px;
+	/*margin: 12px 0px 0px 116px;*/
 }
 
 #u1405-4
@@ -930,8 +930,8 @@ html
 	z-index: 121;
 	width: 71px;
 	min-height: 8px;
-	margin-left: 116px;
-	margin-top: 12px;
+	/*margin-left: 116px;
+	margin-top: 12px;*/
 }
 
 #u1393-4.MuseLinkActive,#u1405-4:hover
@@ -939,7 +939,7 @@ html
 	padding-top: 0px;
 	padding-bottom: 0px;
 	min-height: 8px;
-	margin: 12px 0px 0px 116px;
+	/*margin: 12px 0px 0px 116px;*/
 }
 
 #u1402-4
@@ -947,8 +947,8 @@ html
 	z-index: 109;
 	width: 99px;
 	min-height: 8px;
-	margin-left: 116px;
-	margin-top: 12px;
+	/*margin-left: 116px;
+	margin-top: 12px;*/
 }
 
 #u1405-4.MuseLinkActive,#u1402-4:hover
@@ -956,7 +956,7 @@ html
 	padding-top: 0px;
 	padding-bottom: 0px;
 	min-height: 8px;
-	margin: 12px 0px 0px 116px;
+	/*margin: 12px 0px 0px 116px;*/
 }
 
 #u1403-4
@@ -964,8 +964,8 @@ html
 	z-index: 113;
 	width: 76px;
 	min-height: 8px;
-	margin-left: 116px;
-	margin-top: 12px;
+	/*margin-left: 116px;
+	margin-top: 12px;*/
 }
 
 #u1402-4.MuseLinkActive,#u1403-4:hover
