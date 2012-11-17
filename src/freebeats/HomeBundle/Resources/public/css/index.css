@@ -488,7 +488,7 @@ html
 	width: 112px;
 	margin-right: -112px;
 	margin-top: 106px;
-	left: 527px;
+	left: 452px;
 }
 
 #u6079
@@ -1289,14 +1289,6 @@ html
 	cursor: pointer;
 }
 
-#master-footer
-{
-	width: 0.01px;
-	left: -100px;
-	margin-top: 2px;
-	position: relative;
-}
-
 #u5281
 {
 	z-index: 95;
@@ -1587,12 +1579,12 @@ html
 
 #widgetu5146
 {
-	z-index: 141;
+	/*z-index: 141;
 	width: 0.01px;
 	height: 266px;
 	margin-right: -1px;
-	margin-top: 66px;
-	left: 827px;
+	margin-top: 66px;*/
+	left: 300px;
 }
 
 #widgetu5147

@@ -38,7 +38,8 @@ class DefaultController extends Controller
     	}
     	
     	//return $this->render("freebeatsHomeBundle:Default:contact.html.twig", array("form" => $form->createView()));
-    	return $this->render("freebeatsHomeBundle:Default:contact.form.html.twig", array("form" => $form->createView()));
+    	//return $this->render("freebeatsHomeBundle:Default:contact.form.html.twig", array("form" => $form->createView()));
+    	return $this->render("freebeatsHomeBundle:Default:contactus.html.twig", array("form" => $form->createView()));
     }
     
     /*public function embeddedcontactformAction(Request $request)

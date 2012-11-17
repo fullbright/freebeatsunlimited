@@ -6,6 +6,10 @@ freebeats_home_contactus:
     pattern:  /contactus
     defaults: { _controller: freebeatsHomeBundle:Default:contactUs }
     
+freebeats_home_contactus_new:
+    pattern:  /contactus/new
+    defaults: { _controller: freebeatsHomeBundle:Default:contactUs }
+    
 freebeats_home_contactus_success:
     pattern: /contact/success
     defaults: { _controller: freebeatsHomeBundle:Defaults:contactUsSuccess }

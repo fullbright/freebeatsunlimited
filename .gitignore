@@ -1,6 +1,8 @@
 app/logs/*
 app/cache/*
 web/uploads/*
+app/config/config_prod.yml
+app/parameter.yml
 config/databases.yml
 config/propel.ini
 data/sql/*
@@ -12,4 +14,6 @@ lib/model/doctrine/base/Base*
 lib/model/doctrine/*Plugin/base/Base*
 lib/model/om/*
 lib/model/map/*
-.DS_Store
+*.DS_Store
+.externalToolBuilders
+web/bundles
