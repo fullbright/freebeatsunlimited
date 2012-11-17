@@ -67,7 +67,7 @@ class DefaultController extends Controller
     public function payAction()
     {
     	//redirect to paypal
-    	return $this->render('freebeatsCustomerBundle:Default:createcustomer.success.html.twig');
+    	return $this->render('freebeatsCustomerBundle:Default:paypal.html.twig');
     }
     
     public function createSuccessAction()
