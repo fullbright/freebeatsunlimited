@@ -1,0 +1,42 @@
+{% extends '::base.html.twig' %}
+
+{% block content %}
+
+     <form class="contact-form form-grp clearfix grpelem" id="widgetu5146" action="{{ path('freebeats_home_contactus') }}" method="post" {{ form_enctype(form) }} ><!-- group -->
+     <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu5147" data-required="true"><!-- group -->
+      {{ form_label(form.name, "Votre nom : ", { 'attr': {'class' : 'wrapped-input contact-label' } }) }}
+       <span class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem" id="u5148-4"><!-- content -->
+	       	{{ form_widget(form.name, { 'attr': {'class' : 'wrapped-input contact-input'} }) }}
+	       	{{ form_errors(form.name) }}
+	  </span>
+      </div>
+      <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu5239" data-required="true" data-type="email"><!-- group -->
+       {{ form_label(form.email, "Votre e-mail : ", { 'attr': {'class' : 'wrapped-input contact-label'} }) }}
+       <span class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem" id="u5243-4"><!-- content -->
+       		{{ form_widget(form.email, { 'attr': {'class' : 'wrapped-input contact-input'} }) }}
+	       	{{ form_errors(form.email) }}
+       </span>
+      </div>
+      <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu5224" data-required="false"><!-- group -->
+       {{ form_label(form.message, "Votre message : ", { 'attr': {'class' : 'wrapped-input contact-label'} }) }}
+       <span class="fld-textarea actAsDiv rounded-corners clearfix grpelem" id="u5227-4"><!-- content -->
+       		{{ form_widget(form.message, { 'attr': {'class' : 'wrapped-input contact-input'} }) }}
+	       	{{ form_errors(form.message) }}       	
+       </span>
+      </div>
+      <input class="submit-btn NoWrap grpelem" id="u5157-17" type="submit" value="" tabindex="4"><!-- state-based BG images -->
+      <div class="clearfix grpelem" id="u5188-4"><!-- content -->
+       <p>Envoi du formulaire...</p>
+      </div>
+      <div class="clearfix grpelem" id="u5202-4"><!-- content -->
+       <p>
+       		{{ form_errors(form) }}
+       		{{ form_rest(form) }}       
+       </p>
+      </div>
+      <div class="clearfix grpelem" id="u5213-4"><!-- content -->
+       <p>Formulaire reçu.</p>
+      </div>
+</form>
+
+{% endblock %}
