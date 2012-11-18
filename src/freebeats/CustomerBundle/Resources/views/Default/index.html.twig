@@ -7,69 +7,34 @@
 
 {% block content %}
 
-<div class="grpelem" id="u2774"><!-- simple frame --></div>
-<div class="PamphletWidget clearfix grpelem" id="pamphletu3135"><!-- group -->
-      <div class="ThumbGroup clearfix grpelem" id="u3163"><!-- none box -->
-       <div class="popup_anchor">
-        <div class="Thumb popup_element rounded-corners clearfix wp-tab-active PamphletThumbSelected" id="u3166"><!-- group -->
-         <div class="clearfix grpelem" id="u3278-4"><!-- content -->
-          <p>En ligne</p>
-         </div>
-        </div>
-       </div>
-       <div class="popup_anchor">
-        <div class="Thumb popup_element rounded-corners clearfix" id="u3164"><!-- group -->
-         <div class="clearfix grpelem" id="u3300-4"><!-- content -->
-          <p>Par correspondance</p>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="popup_anchor">
-       <div class="wp-slideshow-clip" style="position: absolute; width: 637px; height: 229px; overflow: hidden; left: 205px; top: 27px; "><div class="ContainerGroup clearfix" id="u3142" style="position: relative; top: 0px; left: 0px; width: 637px; height: 458px; margin: 0px; padding: 0px; overflow: visible; "><!-- stack box -->
-        <div class="Container rounded-corners clearfix grpelem wp-panel wp-panel-active" id="u3148" style="left: 0px; top: 0px; margin: 0px; position: absolute; "><!-- column -->
-         <div class="position_content" id="u3148_position_content">
-          <div class="PamphletWidget clearfix colelem" id="pamphletu4644"><!-- group -->
-           <div class="ThumbGroup clearfix grpelem" id="u4645"><!-- none box -->
-            <div class="popup_anchor">
-             <div class="Thumb popup_element rounded-corners clearfix wp-tab-active PamphletThumbSelected" id="u4647"><!-- group -->
-              <div class="grpelem" id="u4648"><!-- image --></div>
-              <div class="clearfix grpelem" id="u4672-4"><!-- content -->
-               <a class="customersubscribelink" href="{{ path('freebeats_customer_create') }}"><p>Je m'abonne</p></a>
-              </div>
-             </div>
-            </div>
-           </div>
-           <div class="popup_anchor">
-            
-           </div>
-           <div class="popup_anchor">
-            
-           </div>
-          </div>
-          <div class="rounded-corners clearfix colelem" id="u3380"><!-- group -->
-           <div class="clearfix grpelem" id="u3378-7"><!-- content -->
-            <p>Abonnez-vous en toute simplicité!</p>
-            <p>&nbsp;</p>
-            <p>Vous pouvez vous abonner en ligne, en remplissant soigneusement la fiche de renseignement et en validant chaque étape d'inscription. Ensuite vous recevrez un email de confirmation de votre inscription, nous nous efforcerons de traiter dans un bref délai votre abonnement.</p>
-           </div>
-          </div>
-         </div>
-        </div>
-        <div class="Container clearfix grpelem wp-panel" id="u3143" style="left: 0px; top: 229px; margin: 0px; position: absolute; "><!-- group -->
-         <div class="rounded-corners clearfix grpelem" id="u3381"><!-- group -->
-          <div class="clearfix grpelem" id="u3382-17"><!-- content -->
-           <p>Nous vous encourageons à télèchager le <span id="u3382-2">formulaire d'inscription</span>&nbsp;<span id="u3382-4">en format pdf, de le</span>&nbsp;<span id="u3382-6">remplir soigneusement puis nous le retouner à l'adresse ci-dessous avec le reglement de la premiére échéance.</span></p>
-           <p>&nbsp;</p>
-           <p>&nbsp;</p>
-           <p id="u3382-11">FREEDOM BEATS</p>
-           <p id="u3382-13">117 RUE ERETO</p>
-           <p id="u3382-15">75000 PARIS CEDEX</p>
-          </div>
-         </div>
-        </div>
-       </div></div>
-      </div>
+<div id="freebeats-subscribe">
+	<ul>
+		<li>
+			<div id="subscribe-now"><div class="subscribe-item selected"><p>En ligne</p></div></div>
+			<div id="subscribe-now-content" class="subscribe-content" style="top : 323px; display: block">
+				Abonnez-vous en toute simplicité! <br><br><br>
+				Vous pouvez vous abonner en ligne, en remplissant soigneusement la fiche de 
+				renseignement et en validant chaque étape d'inscription. 
+				Ensuite vous recevrez un email de confirmation de votre inscription, 
+				nous nous efforcerons de traiter dans un bref délai votre abonnement.<br><br><br>
+				<a href="{{ path("freebeats_customer_create") }}"><div class="subscribe-button">Je m'abonne</div></a>
+			</div>
+		</li>
+		<li>
+			<div id="subscribe-mail"><div class="subscribe-item"><p>Par correspondance</p></div></div>
+			<div id="subscribe-mail-content" class="subscribe-content">
+				Nous vous encourageons à téléchager le formulaire d'inscription en format pdf, 
+				de le remplir soigneusement puis nous le retouner à l'adresse ci-dessous avec 
+				le reglement de la premiére échéance. <br><br><br>
+ 
+				<div style="text-align: center">
+					FREEDOM BEATS<br>
+					117 RUE ERETO<br>
+					75000 PARIS CEDEX<br>
+				</div>
+			</div>
+		</li>
+	</ul>
 </div>
 
 {% endblock %}
@@ -81,6 +46,18 @@
 	  Muse.Utils.addSelectorFn('#widgetu4903', function(elem) { new WebPro.Widget.Form(elem, {validationEvent:'submit',errorStateSensitivity:'high',fieldWrapperClass:'fld-grp',formSubmittedClass:'frm-sub-st',formErrorClass:'frm-subm-err-st',formDeliveredClass:'frm-subm-ok-st',notEmptyClass:'non-empty-st',focusClass:'focus-st',invalidClass:'fld-err-st',requiredClass:'fld-err-st',ajaxSubmit:false}); });/* #widgetu4903 */
 	  //Muse.Utils.addSelectorFn('#pamphletu4644', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'lightbox',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:1000,hideAllContentsFirst:false,shuffle:false}); });/* #pamphletu4644 */
 	  Muse.Utils.addSelectorFn('#pamphletu3135', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'stack',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'vertical',transitionDuration:500,hideAllContentsFirst:false,shuffle:false}); });/* #pamphletu3135 */
-    		   		
+
+      $("#subscribe-now").click(function(){ 
+          $(".subscribe-content").css("display", "none"); 
+          $("#subscribe-now-content").css("display", "block"); 
+          $(".subscribe-item").removeClass("selected");
+		  $("#subscribe-now .subscribe-item").addClass("selected");
+      });
+      $("#subscribe-mail").click(function(){ 
+          $(".subscribe-content").css("display", "none"); 
+          $("#subscribe-mail-content").css("display", "block"); 
+		  $(".subscribe-item").removeClass("selected");
+		  $("#subscribe-mail .subscribe-item").addClass("selected");
+      });
 	  </script>
 {% endblock %}

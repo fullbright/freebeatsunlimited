@@ -324,36 +324,6 @@ html
 	left: 523px;
 }
 
-#u5899
-{
-	z-index: 47;
-	width: 37px;
-	height: 42px;
-	margin-right: -37px;
-	margin-top: 779px;
-	left: 14px;
-}
-
-#u5899:hover
-{
-	margin: 779px -37px 0px 0px;
-}
-
-#u5910
-{
-	z-index: 48;
-	width: 37px;
-	height: 42px;
-	margin-right: -37px;
-	margin-top: 825px;
-	left: 13px;
-}
-
-#u5910:hover
-{
-	margin: 825px -37px 0px 0px;
-}
-
 #menuu193
 {
 	z-index: 49;
@@ -1293,14 +1263,6 @@ html
 .TabbedPanelsTab /* tabset */
 {
 	cursor: pointer;
-}
-
-#master-footer
-{
-	width: 0.01px;
-	left: -100px;
-	margin-top: 15px;
-	position: relative;
 }
 
 #u5281

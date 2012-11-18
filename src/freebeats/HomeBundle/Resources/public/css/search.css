@@ -1,14 +1,16 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.search {
+.search 
+{
     position: relative;
     margin: 0 auto;
     width: 300px;
 	
-	}
+}
 	
-.search input {
+.search input 
+{
     height: 26px;
     width: 70%;
     padding: 0 12px 0 25px;

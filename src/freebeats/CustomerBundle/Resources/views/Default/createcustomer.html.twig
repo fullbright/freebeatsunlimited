@@ -6,65 +6,65 @@
 {% endblock %}
 
 {% block content %}
-	<div class="Container rounded-corners clearfix grpelem wp-panel wp-panel-active" id="u4664"><!-- group -->
-              <form class="form-grp clearfix grpelem" id="widgetu4903" action="{{ path('freebeats_customer_create') }}" method="post" {{ form_enctype(form) }} ><!-- group -->
-               	<div class="fld-grp rounded-corners clearfix grpelem" id="widgetu5002"><!-- group -->
+	<div class="" id="customer-create"><!-- group -->
+              <form class="form-grp clearfix " id="widgetu4903" action="{{ path('freebeats_customer_create') }}" method="post" {{ form_enctype(form) }} ><!-- group -->
+               	<div class="fld-grp rounded-corners clearfix " id="widgetu5002"><!-- group -->
                 		{{ form_label(form.firstname, "Prénom : ", { 'attr': {'class' : 'wrapped-input contact-label' } }) }}
-	                <div class="fld-input NoWrap clearfix grpelem" id="pu5003-4"><!-- group -->
+	                <div class="fld-input NoWrap clearfix " id="pu5003-4"><!-- group -->
 	                 	{{ form_widget(form.firstname, { 'attr': {'class' : 'wrapped-input contact-input'} }) }}
 	                 </div>
 	                 <div>
 		       		 	{{ form_errors(form.firstname) }}
 	                </div>
                </div>
-                <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu5015"><!-- group -->
+                <div class="fld-grp rounded-corners clearfix " id="widgetu5015"><!-- group -->
 	                	{{ form_label(form.lastname, "Nom : ", { 'attr': {'class' : 'wrapped-input contact-label' } }) }}
-	                <div class="fld-input NoWrap clearfix grpelem" id="pu5017-4"><!-- group -->
+	                <div class="fld-input NoWrap clearfix " id="pu5017-4"><!-- group -->
 	                 	{{ form_widget(form.lastname, { 'attr': {'class' : 'wrapped-input contact-input'} }) }}
 	                 </div>
 	                 <div>
 		       		 	{{ form_errors(form.lastname) }}
 	                </div>
                </div>
-               <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu4958"><!-- group -->
+               <div class="fld-grp rounded-corners clearfix " id="widgetu4958"><!-- group -->
 	                 	{{ form_label(form.address, "Adresse : ", { 'attr': {'class' : 'wrapped-input contact-label' } }) }}
-	                 <div class="fld-input NoWrap clearfix grpelem" id="pu4960-4"><!-- group -->
+	                 <div class="fld-input NoWrap clearfix " id="pu4960-4"><!-- group -->
 	                  	{{ form_widget(form.address, { 'attr': {'class' : 'wrapped-input contact-input'} }) }}
 	                  </div>
 	                  <div>
 		       		  	{{ form_errors(form.address) }}
 	                 </div>
                </div>
-               <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu4952"><!-- group -->
+               <div class="fld-grp rounded-corners clearfix " id="widgetu4952"><!-- group -->
 	                	{{ form_label(form.city, "Ville, Pays : ", { 'attr': {'class' : 'wrapped-input contact-label' } }) }}
-	                <div class="fld-input NoWrap clearfix grpelem" id="pu4955-4"><!-- group -->
+	                <div class="fld-input NoWrap clearfix " id="pu4955-4"><!-- group -->
 	                 	{{ form_widget(form.city, { 'attr': {'class' : 'wrapped-input contact-input'} }) }}
 	                 </div>
 	                 <div>
 		       		 	{{ form_errors(form.city) }}
 	                </div>
                </div>
-               <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu4997"><!-- group -->
+               <div class="fld-grp rounded-corners clearfix " id="widgetu4997"><!-- group -->
 	                	{{ form_label(form.postalcode, "Code postal : ", { 'attr': {'class' : 'wrapped-input contact-label' } }) }}
-	                <div class="fld-input NoWrap clearfix grpelem" id="pu5000-4"><!-- group -->
+	                <div class="fld-input NoWrap clearfix " id="pu5000-4"><!-- group -->
 	                 	{{ form_widget(form.postalcode, { 'attr': {'class' : 'wrapped-input contact-input'} }) }}
 	                 </div>
 	                 <div>
 		       		 	{{ form_errors(form.postalcode) }}
 	                </div>
                </div>
-               <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu4910"><!-- group -->
+               <div class="fld-grp rounded-corners clearfix " id="widgetu4910"><!-- group -->
 	                	{{ form_label(form.phonenumber, "Téléphone : ", { 'attr': {'class' : 'wrapped-input contact-label' } }) }}
-	                <div class="fld-input NoWrap clearfix grpelem" id="pu4911-4"><!-- group -->
+	                <div class="fld-input NoWrap clearfix " id="pu4911-4"><!-- group -->
 	                 	{{ form_widget(form.phonenumber, { 'attr': {'class' : 'wrapped-input contact-input'} }) }}
 	                 </div>
 	                 <div>
 		       		 	{{ form_errors(form.phonenumber) }}
 	                </div>
                </div>
-               <div class="fld-grp rounded-corners clearfix grpelem" id="widgetu4904" data-type="email"><!-- group -->
+               <div class="fld-grp rounded-corners clearfix " id="widgetu4904" data-type="email"><!-- group -->
 	                	{{ form_label(form.email, "Votre email : ", { 'attr': {'class' : 'wrapped-input contact-label' } }) }}
-	                <div class="fld-input NoWrap clearfix grpelem" id="pu4906-4"><!-- group -->
+	                <div class="fld-input NoWrap clearfix " id="pu4906-4"><!-- group -->
 	                 	{{ form_widget(form.email, { 'attr': {'class' : 'wrapped-input contact-input'} }) }}</div>
 	                 <div>
 		       		 	{{ form_errors(form.email) }}
@@ -76,10 +76,10 @@
 		       		{{ form_rest(form) }}       
 		       </div>
                
-               <input class="submit-btn NoWrap grpelem" id="u4909-17" type="submit" value=""><!-- state-based BG images -->
+               <input class="submit-btn NoWrap " id="u4909-17" type="submit" value=""><!-- state-based BG images -->
                
               </form>
-              <div class="grpelem" id="u5279-4"><!-- rasterized frame -->
+              <div class="" id="u5279-4"><!-- rasterized frame -->
                <img id="u5279-4_img" src="{{ asset('bundles/freebeatscustomer/images/u5279-4.png') }}" alt="FORMULAIRE D'INSCRIPTION" width="261" height="15">
               </div>
         </div>
