@@ -1,3 +1,5 @@
+
+
 #u329
 {
 	opacity: 0.62;
@@ -434,10 +436,10 @@
 #u6080-4
 {
 	background-color: transparent;
-	color: #7F7F7F;
 	text-align: center;
-	font-size: 14px;
-	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-size: 14px;	
+	font-family: 'Gravitas One', cursive !important;
+	color: black;
 	position: relative;
 }
 
@@ -529,10 +531,10 @@
 #u6106-4
 {
 	background-color: transparent;
-	color: #7F7F7F;
+	color: #000;
 	text-align: center;
 	font-size: 14px;
-	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-family: 'Gravitas One', cursive !important;
 	position: relative;
 }
 

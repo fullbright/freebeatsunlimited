@@ -399,3 +399,55 @@ body div
 {
 	color : #D9931E;
 }
+
+.header-subtitle
+{
+	position: relative !important;
+	top: 50px !important;
+	left: 15px !important;
+	/*background-color: #CCC;*/
+	width: 200px !important;
+	color: #FFF !important; 
+}
+
+.header-subtitle li
+{
+	/*border-right: 1px solid #FFF;*/
+	display: inline !important;
+}
+
+.header-subtitle a
+{
+	padding-bottom: 10px !important;
+	/*border-bottom: 1px solid #CC0;*/
+	text-decoration: none !important;
+	padding: 3px !important;
+	background-color: #CCC !important;
+}
+
+.header-subtitle a:hover
+{
+	color: #D9931E !important;
+}
+
+.header-subtitle a:visited
+{
+	color: #FFF !important;
+	text-decoration: none !important;
+}
+
+#fbw-sublist
+{
+	left: -350px !important;
+	width: 900px !important;
+}
+
+#fbi-sublist
+{
+	width: 345px !important;
+}
+
+#store-sublist
+{
+	
+}
