@@ -1,9 +1,9 @@
+freebeats_homepage:
+    pattern:  /
+    defaults: { _controller: freebeatsHomeBundle:Default:index }
+
 freebeats_unlimitedcard:
     resource: "@freebeatsUnlimitedcardBundle/Resources/config/routing.yml"
-    prefix:   /
-
-freebeats_contact:
-    resource: "@freebeatsContactBundle/Resources/config/routing.yml"
     prefix:   /
 
 freebeats_about:

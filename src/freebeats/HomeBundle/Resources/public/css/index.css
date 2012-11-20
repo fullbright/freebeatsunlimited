@@ -24,6 +24,14 @@ html
 	background: transparent url("../images/brillant_2x.png") repeat center center;
 }
 
+.homepage-content
+{
+	margin-left: 66px !important;
+	position: relative;
+	left: -120px;
+	top: 40px;
+}
+
 #page_position_content
 {
 	margin-bottom: -361px;
@@ -1229,8 +1237,8 @@ html
 #u5488
 {
 	z-index: 256;
-	width: 725px;
-	height: 279px;
+	width: 900px;
+	height: 600px;
 	border-width: 4px;
 	border-style: solid;
 	border-color: #FFA132;
