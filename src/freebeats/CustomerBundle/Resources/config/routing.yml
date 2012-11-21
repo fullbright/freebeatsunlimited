@@ -14,6 +14,14 @@ freebeats_customer_pay:
     pattern:  /customer/pay
     defaults: { _controller: freebeatsCustomerBundle:Default:pay }
     
+freebeats_customer_pay_success:
+    pattern:  /customer/pay/success
+    defaults: { _controller: freebeatsCustomerBundle:Default:paySuccess }
+
+freebeats_customer_pay_failed:
+    pattern:  /customer/pay/failed
+    defaults: { _controller: freebeatsCustomerBundle:Default:payFailed }
+    
 freebeats_customer_success:
     pattern:  /customer/success
     defaults: { _controller: freebeatsCustomerBundle:Default:createSuccess }

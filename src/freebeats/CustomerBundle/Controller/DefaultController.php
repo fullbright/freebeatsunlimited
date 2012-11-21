@@ -66,8 +66,26 @@ class DefaultController extends Controller
     
     public function payAction()
     {
+    	$logger = $this->get('logger');
+    	$logger->info('Pay action called');
     	//redirect to paypal
-    	return $this->render('freebeatsCustomerBundle:Default:createcustomer.success.html.twig');
+    	return $this->render('freebeatsCustomerBundle:Default:paypal.html.twig');
+    }
+    
+    public function paySuccessAction()
+    {
+    	$logger = $this->get('logger');
+    	$logger->info('Pay success action called');
+    	//redirect to paypal
+    	return $this->render('freebeatsCustomerBundle:Default:pay.success.html.twig');
+    }
+    
+    public function payFailedAction()
+    {
+    	$logger = $this->get('logger');
+    	$logger->info('Pay failed action called');
+    	//redirect to paypal
+    	return $this->render('freebeatsCustomerBundle:Default:pay.failed.html.twig');
     }
     
     public function createSuccessAction()
