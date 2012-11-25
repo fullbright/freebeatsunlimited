@@ -1,0 +1,28 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/freebeatsshowroom/css/les-salles-presenties.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+
+	<div class="moulin-rouge-slideshow">
+		<img id="u913_img" src="{{ asset('bundles/freebeatshome/images/Moulin_Rouge.jpg') }}" alt="Le moulin rouge" />
+	</div>
+	
+	<div class="moulin-rouge-map">
+	<h1>PLAN</h1>
+     
+     <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=Le+Moulin+Rouge,+Boulevard+de+Clichy,+Paris&amp;aq=1&amp;oq=moulin&amp;sll=48.680793,2.502588&amp;sspn=2.477162,5.795288&amp;ie=UTF8&amp;hq=Le+Moulin+Rouge,+Boulevard+de+Clichy,+Paris&amp;t=m&amp;ll=48.887944,2.331805&amp;spn=0.009876,0.018239&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=Le+Moulin+Rouge,+Boulevard+de+Clichy,+Paris&amp;aq=1&amp;oq=moulin&amp;sll=48.680793,2.502588&amp;sspn=2.477162,5.795288&amp;ie=UTF8&amp;hq=Le+Moulin+Rouge,+Boulevard+de+Clichy,+Paris&amp;t=m&amp;ll=48.887944,2.331805&amp;spn=0.009876,0.018239&amp;z=15&amp;iwloc=A" style="color:#0000FF;text-align:left">Agrandir le plan</a></small>
+	</div>
+     
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+ 	  <!-- page dedicated scripts -->
+	  <script type="text/javascript">
+		  Muse.Utils.addSelectorFn('#pamphletu3865', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'stack',event:'click',deactivationEvent:'',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,shuffle:false}); });/* #pamphletu3865 */		   		
+	  </script>
+{% endblock %}

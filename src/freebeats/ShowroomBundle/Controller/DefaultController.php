@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('freebeatsShowroomBundle:Default:index.html.twig');
+        return $this->render('freebeatsShowroomBundle:Default:moulinrouge.html.twig');
     }
 }
