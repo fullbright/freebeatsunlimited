@@ -2,6 +2,14 @@ freebeats_home_homepage:
     pattern:  /home
     defaults: { _controller: freebeatsHomeBundle:Default:index }
     
+freebeats_home_howdoesitwork:
+    pattern:  /how-does-it-work
+    defaults: { _controller: freebeatsHomeBundle:Default:howDoesItWork }
+    
+freebeats_home_news:
+    pattern:  /news
+    defaults: { _controller: freebeatsHomeBundle:Default:news }
+    
 freebeats_home_contactus:
     pattern:  /contactus
     defaults: { _controller: freebeatsHomeBundle:Default:contactUs }

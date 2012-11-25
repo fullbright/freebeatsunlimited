@@ -13,6 +13,16 @@ class DefaultController extends Controller
         return $this->render('freebeatsHomeBundle:Default:index.html.twig');
     }
     
+    public function howDoesItWorkAction()
+    {
+    	return $this->render('freebeatsHomeBundle:Default:howdoesitwork.html.twig');
+    }
+    
+    public function newsAction()
+    {
+    	return $this->render('freebeatsHomeBundle:Default:news.html.twig');
+    }
+    
     public function contactUsAction(Request $request)
     {
     	$contact = new Contact();
