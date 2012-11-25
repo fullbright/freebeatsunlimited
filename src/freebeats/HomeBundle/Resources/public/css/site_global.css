@@ -430,7 +430,7 @@ body div
 	color: #D9931E !important;
 }
 
-.header-subtitle a:visited
+.header-subtitle a:visited, .header-subtitle a
 {
 	color: #FFF !important;
 	text-decoration: none !important;
@@ -444,7 +444,7 @@ body div
 
 #fbi-sublist
 {
-	width: 345px !important;
+	width: 665px !important;
 }
 
 #store-sublist
