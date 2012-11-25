@@ -1,8 +1,26 @@
 {% extends '::base.html.twig' %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/freebeatscustomer/css/abonnez-vous.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+
 
 {% block content %}
 
-	<p style="color : green"><strong>Merci. Votre paiement a bien été validé.</strong></p>
+	<p style="color : green; margin-bottom:40px;" id="payment-canvas">
+		<img id="payment-success" src="{{ asset('bundles/freebeatshome/images/success.png') }}" alt="successfull payment" width="50"/>
+		<strong>Merci. Votre paiement a bien été validé.</strong>
+		
+		<br />
+		<br />
+		<br />
+			Nous vous remercions de votre paiement. 
+			Votre transaction est terminée et vous allez recevoir par email un avis accusant réception 
+			de votre achat et vous détaillant la procédure qui suivra jusqu’à ce que vous receviez votre 
+			carte Freedom Beats Illimité. Vous pouvez vous connecter à votre compte sur www.paypal.com/fr 
+			pour consulter les détails de cette transaction.
+		
+	</p>	
 
 {% endblock %}

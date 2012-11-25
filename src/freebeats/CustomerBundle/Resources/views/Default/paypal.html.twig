@@ -6,16 +6,24 @@
 {% endblock %}
 
 {% block content %}
-	<div class="Container rounded-corners clearfix grpelem wp-panel wp-panel-active" id="u4664"><!-- group -->
+	<div class="Container rounded-corners clearfix grpelem wp-panel wp-panel-active" id="payment-canvas"><!-- group -->
+		<div class="payment-explanation">
+			Votre compte est enregitré dans nos systèmes à l'état "En cours". <br />
+			Pour le valider, vous devez prodécer au paiement. <br />
+			
+			Veuillez cliquer sur le bouton ci-dessous pour accéder à la page de paiement.
+			
+		</div>
             <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
 				<input type="hidden" name="cmd" value="_s-xclick">
 				<input type="hidden" name="hosted_button_id" value="LVJMFARVZUJL4">
 				<input type="hidden" name="return" value="{{ url("freebeats_customer_pay_success") }}">
 				<input type="hidden" name="rm" value="2">
 				<input type="hidden" name="cancel_return" value="{{ url("freebeats_customer_pay_failed") }}">
-				<input type="image" src="https://www.sandbox.paypal.com/fr_FR/FR/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
+				<input type="image" src="{{ asset('bundles/freebeatshome/images/pay-button.png') }}" border="0" name="submit" 
+				alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
 				<img alt="" border="0" src="https://www.sandbox.paypal.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
-			</form>
+			</form>						
     </div>
 
 

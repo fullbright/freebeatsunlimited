@@ -29,6 +29,29 @@ html
 	margin-bottom: -361px;
 }
 
+#payment-canvas
+{
+	width: 615px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #B8BABC;
+	background-color: #E6E6E6;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	padding: 20px;
+	margin-left: 125px;
+	position: relative;
+	text-align: justify;
+}
+
+.payment-explanation
+{
+	margin-bottom: 25px;
+	text-align: justify;
+}
+
 #u329
 {
 	z-index: 3;
