@@ -747,7 +747,7 @@ html
 {
 	position: absolute;
 	width: 107px;
-	background-color: #000000;
+	background-color: #CCCCCC;
 	-moz-border-radius: 0px 5px 5px 0px ;
 	-webkit-border-radius: 0px 5px 5px 0px ;
 	-khtml-border-radius: 0px 5px 5px 0px ;
@@ -805,7 +805,7 @@ html
 {
 	position: absolute;
 	width: 153px;
-	background-color: #000000;
+	background-color: #CCCCCC;
 	-moz-border-radius: 0px 5px 5px 0px ;
 	-webkit-border-radius: 0px 5px 5px 0px ;
 	-khtml-border-radius: 0px 5px 5px 0px ;
@@ -829,7 +829,7 @@ html
 	-khtml-border-radius: 0px 5px 5px 0px ;
 	border-radius: 0px 5px 5px 0px ;
 	margin: 0px;
-	background: #CCCCCC url("../images/pointe_d.png") no-repeat left center;
+	background: #000000 url("../images/pointe_d.png") no-repeat left center;
 }
 
 #u3300-4
